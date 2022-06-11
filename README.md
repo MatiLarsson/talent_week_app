@@ -15,12 +15,12 @@ This is a paid project that serves as a benefit for ending React's course within
 - react 18+
 - react-dom
 - react-scripts
-- node-sass
+- framer-motion
 
 # Instructions for use
 
-1. git clone https://github.com/MatiLarsson/coderhouse-talent-week-2022
-2. cd ProyectoFinal_ReactJS_Larsson
+1. git clone https://github.com/MatiLarsson/talent_week_app
+2. cd talent_week_app
 3. npm install
 4. npm start
 
