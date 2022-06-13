@@ -1,6 +1,8 @@
 
 export default function Agenda () {
   return (
-    <div>Agenda</div>
+    <section>
+      Agenda
+    </section>
   )
 }

@@ -1,19 +1,28 @@
+import { MENU_OPTIONS } from "data"
+import { CODERHOUSE_OPTIONS } from "data"
 
 export default function Footer () {
   return (
     <div className="footer">
       <div className="footer-menu">
-        <img className="footer-menu-logo" src="/assets/logos/talentweek.svg" alt='talentweek logo'/>
-        <a href='/' className="footer-menu-item">Speakers</a>
-        <a href='/' className="footer-menu-item">Agenda</a>
-        <a href='/' className="footer-menu-item">Sponsors</a>
-        <a href='/' className="footer-menu-item">Inscripción</a>
+        <a href="/">
+          <img className="footer-menu-logo" src="/assets/logos/talentweek.svg" alt='talentweek logo'/>
+        </a>
+        {
+          MENU_OPTIONS.map(option => (
+            <a href={option.to} className="footer-menu-item">{option.name}</a>
+          ))
+        }
       </div>
       <div className="footer-coderhouse">
-        <img className="footer-coderhouse-logo" src="/assets/logos/coderhouse.svg" alt='coderhouse logo'/>
-        <a href='/' className="footer-coderhouse-item">Nosotros</a>
-        <a href='/' className="footer-coderhouse-item">Testimonios</a>
-        <a href='/' className="footer-coderhouse-item">Contacto</a>
+        <a href='https://www.coderhouse.com/' target='_blank' rel='noreferrer'>
+          <img className="footer-coderhouse-logo" src="/assets/logos/coderhouse.svg" alt='coderhouse logo'/>
+        </a>
+        {
+          CODERHOUSE_OPTIONS.map(option => (
+            <a href={option.to} className="footer-coderhouse-item">{option.name}</a>
+          ))
+        }
       </div>
       <div className="seguinos">
         <p>Seguinos en</p>

@@ -1,6 +1,8 @@
 
 export default function Apply () {
   return (
-    <div>Apply</div>
+    <section>
+      Apply
+    </section>
   )
 }
