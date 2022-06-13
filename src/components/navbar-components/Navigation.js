@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 import Logo from "./Logo";
+import { MENU_OPTIONS } from "data";
 
 const variants = {
   open: {
@@ -11,26 +12,7 @@ const variants = {
   }
 };
 
-const MENU_OPTIONS = [
-  {
-    name:'Speakers',
-    to: '/'
-  },
-  {
-    name: 'Agenda',
-    to: '/'
-  },
-  {
-    name: 'Sponsors',
-    to: '/'
-  },
-  {
-    name: 'Inscripción',
-    to: '/'
-  }
-];
-
-export const Navigation = ({ options }) => (
+export const Navigation = () => (
   <motion.ul variants={variants}>
     <Logo />
     {

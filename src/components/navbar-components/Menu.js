@@ -2,6 +2,7 @@ import { motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
 
+
 const sidebar = {
   open: () => ({
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
@@ -23,7 +24,7 @@ const sidebar = {
 };
 
 
-export default function Menu ({options}) {
+export default function Menu () {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
@@ -32,7 +33,7 @@ export default function Menu ({options}) {
       animate={isOpen ? "open" : "closed"}
     >
       <motion.div className="menu-background" variants={sidebar} />
-      <Navigation options={options}/>
+      <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

@@ -1,9 +1,11 @@
 
 export default function Welcome () {
   return (
-    <div className="welcome">
+    <section className="welcome">
       <div className="cyborg-container">
         <img src="/assets/images/mobile/cyborg-mobile.png" className="cyborg" alt='cyborg' />
+        <div className="gradient-canvas1" />
+        <div className="gradient-canvas2" />
       </div>
       <div className="bannerContainer">
         <p className="banner banner--1">DESCUBRE TU FUTURO</p>
@@ -15,6 +17,6 @@ export default function Welcome () {
         <button className="button button--reservar">Reservar mi lugar</button>
         <button className="button button--agenda">Ver agenda</button>
       </div>
-    </div>
+    </section>
   )
 }

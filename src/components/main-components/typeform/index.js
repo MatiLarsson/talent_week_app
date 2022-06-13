@@ -1,6 +1,8 @@
 
 export default function Typeform () {
   return (
-    <div>Typeform</div>
+    <section>
+      Typeform
+    </section>
   )
 }
