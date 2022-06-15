@@ -28,9 +28,6 @@ This is a paid project that serves as a benefit for ending React's course within
 
 Falta:
 
-Importar fuentes:
-Untitled Sans / Regular o Normal / 400, 500
-Gobold Bold / italic / 700
-Gobold / 400
+Ver paginacion de mayor cantidad de sponsors con responsive
 
  -->
