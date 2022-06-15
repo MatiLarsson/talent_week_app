@@ -27,6 +27,7 @@ This is a paid project that serves as a benefit for ending React's course within
 <!--
 
 Falta:
+Fuente: Del contador
 
 Ver paginacion de mayor cantidad de sponsors con responsive
 
