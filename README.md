@@ -33,5 +33,6 @@ Untitled Sans / Regular / 400, 500
 Helvetica Neue / 400
 Gobold Bold / 700
 Gobold / 400
+Cursed Timer ULiL / 400
 
  -->
