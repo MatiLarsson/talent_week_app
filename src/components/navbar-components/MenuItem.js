@@ -17,15 +17,19 @@ const variants = {
   }
 };
 
-export const MenuItem = ({ option }) => {
+export const MenuItem = ({ option, open }) => {
 
   return (
     <motion.li
       variants={variants}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
+      style={open ? { pointerEvents: "auto" } : { pointerEvents: "none" }}
     >
-      <a href={option.to}><div className="menu-option">{option.name}</div></a>
+      <a
+        href={option.to}
+        style={open ? { pointerEvents: "auto" } : { pointerEvents: "none" }}
+      ><div className="menu-option">{option.name}</div></a>
     </motion.li>
   );
 };

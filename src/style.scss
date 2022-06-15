@@ -63,6 +63,7 @@ $US-regular: "UntitledSansRegular";
     bottom: 0;
     width: 240px;
     height: 640px;
+    pointer-events: none;
     .menu-background {
       position: absolute;
       top: 0;
@@ -70,6 +71,7 @@ $US-regular: "UntitledSansRegular";
       bottom: 0;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.6);
+      pointer-events: none;
     }
 
     button {
@@ -88,6 +90,7 @@ $US-regular: "UntitledSansRegular";
       background: transparent;
       -webkit-filter: invert(1);
       filter: invert(100%);
+      pointer-events: auto;
     }
 
     ul,
@@ -110,16 +113,18 @@ $US-regular: "UntitledSansRegular";
       justify-content: flex-end;
       font-family: $US-regular;
       color: white;
-      cursor: pointer;
       margin-bottom: 16px;
       a {
         text-decoration: none;
+        cursor: pointer;
         color: white;
+        pointer-events: auto;
       }
       .menu-logo {
         width: 90px;
         display: flex;
         justify-content: flex-end;
+        pointer-events: none;
       }
       .menu-option {
         font-size: 16px;
@@ -213,23 +218,26 @@ $US-regular: "UntitledSansRegular";
     .buttonContainer {
       display: flex;
       flex-direction: column;
-      button {
-        border: none;
-        width: 328px;
-        height: 48px;
-        margin: 4px 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50px;
-        font-family: $US-medium;
-        font-size: 16px;
-        line-height: 20px;
-        color: black;
-        &:focus {
+      a {
+        text-decoration: none;
+        button {
           border: none;
-          outline: none;
+          width: 328px;
+          height: 48px;
+          margin: 4px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+          font-family: $US-medium;
+          font-size: 16px;
+          line-height: 20px;
+          color: black;
+          &:focus {
+            border: none;
+            outline: none;
+          }
         }
       }
       .button--reservar {
@@ -285,12 +293,21 @@ $US-regular: "UntitledSansRegular";
               border-radius: 13px 0 0 0;
               pointer-events: none;
             }
-            .linkedInCard {
+            a {
+              z-index: 10;
+              cursor: pointer;
+              pointer-events: auto;
               position: absolute;
               top: 8px;
               right: 8px;
               width: 23px;
               height: 23px;
+              .linkedInCard {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+                filter: drop-shadow(0px 2px 3px rgb(0 0 0 / 0.4));
+              }
             }
             .info-layer {
               position: absolute;
@@ -322,13 +339,187 @@ $US-regular: "UntitledSansRegular";
               .speaker-company {
                 font-family: $US-medium;
                 font-size: 14px;
-                color: white;
                 color: #EAFF6A;
                 line-height: 17px;
               }
             }
           }
         }
+      }
+    }
+  }
+  .apply {
+    width: 100%;
+    height: 432px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .cyborg-container {
+      position: absolute;
+      right: 0;
+      bottom: 9px;
+      .cyborg {
+        object-fit: contain;
+        z-index: 0;
+      }
+      .gradient-canvas1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(271.94deg, #000000 -0.67%, rgba(0, 0, 0, 0) 6.66%);
+        z-index: 1;
+      }
+      .gradient-canvas2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(310.33deg, #000000 4.33%, rgba(0, 0, 0, 0) 14.36%);
+        z-index: 2;
+      }
+      .gradient-canvas3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(271.45deg, #000000 -9.01%, rgba(0, 0, 0, 0) 26.58%);
+        z-index: 3;
+      }
+      .gradient-canvas4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(185.31deg, rgba(0, 0, 0, 0) 76.39%, rgba(0, 0, 0, 0) 82.54%, #000000 93.97%, #000000 100.12%);
+        z-index: 4;
+      }
+    }
+    .apply-container {
+      z-index: 5;
+      width: 100%;
+      height: 100%;
+      padding: 44px 16px 0 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .apply-title {
+        font-family: $GB-bold;
+        font-size: 40px;
+        color: #EAFF6A;
+      }
+      .apply-text {
+        margin-top: 20px;
+        font-family: $US-regular;
+        font-size: 14px;
+        color: white;
+        margin-top: 16px;
+      }
+      a {
+        margin-top: 12px;
+        text-decoration: none;
+        button {
+          border: none;
+          width: 160px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20.5px;
+          font-family: $US-medium;
+          font-size: 14px;
+          background-color: #EAFF6A;
+          color: black;
+          &:focus {
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .sponsors {
+    padding: 47px 16px 0 16px;
+    width: 100%;
+    height: 304px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .sponsors-title {
+      font-family: $GB-bold;
+      font-size: 22.5px;
+      color: #EA90FF;
+      text-align: left;
+    }
+    .sponsors-carousel-container {
+      margin-top: 12px;
+      width: 100%;
+      height: 140px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .two-image-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 40%;
+          height: 70%;
+          padding: 10px;
+          object-fit: contain;
+          pointer-events: none;
+        }
+      }
+      .next,
+      .prev {
+        top: calc(50% - 20px);
+        position: absolute;
+        background: white;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        z-index: 2;
+      }
+      .next {
+        right: 10px;
+      }
+      .prev {
+        left: 10px;
+        transform: scale(-1);
+      }
+      .refresh {
+        padding: 10px;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
       }
     }
   }
@@ -382,6 +573,8 @@ $US-regular: "UntitledSansRegular";
       margin-right: -5px;
     }
     .footer-coderhouse-item {
+      display: flex;
+      align-items: center;
       font-family: $US-regular;
       font-size: 16px;
       color: white;

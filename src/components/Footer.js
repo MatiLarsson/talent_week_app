@@ -20,26 +20,26 @@ export default function Footer () {
         </a>
         {
           CODERHOUSE_OPTIONS.map(option => (
-            <a href={option.to} className="footer-coderhouse-item">{option.name}</a>
+            <a href={option.to} className="footer-coderhouse-item" key={option.name}>{option.image ? <img src={option.image} alt='' style={{filter: 'invert(100%)', width: '20px', height: '20px', marginRight: '5px', marginBottom: '3px'}}/> : null}{option.name}</a>
           ))
         }
       </div>
       <div className="seguinos">
         <p>Seguinos en</p>
         <div className="media">
-          <a href='/' className="media-item">
+          <a href='https://www.facebook.com/Coderhouse/' className="media-item" target='_blank' rel='noreferrer'>
             <img src="/assets/logos/facebook.svg" alt='facebook logo'/>
           </a>
-          <a href='/' className="media-item">
+          <a href='https://www.instagram.com/coderhouse/' className="media-item" target='_blank' rel='noreferrer'>
             <img src="/assets/logos/instagram.svg" alt='instagram logo'/>
           </a>
-          <a href='/' className="media-item">
+          <a href='https://www.youtube.com/channel/UCeFRG6700bzqYI0M_9vyelw/videos' className="media-item" target='_blank' rel='noreferrer'>
             <img src="/assets/logos/youtube.svg" alt='youtube logo'/>
           </a>
-          <a href='/' className="media-item">
+          <a href='https://twitter.com/coderhouse' className="media-item" target='_blank' rel='noreferrer'>
             <img src="/assets/logos/twitter.svg" alt='twitter logo'/>
           </a>
-          <a href='/' className="media-item">
+          <a href='https://www.linkedin.com/school/coderhouse/' className="media-item" target='_blank' rel='noreferrer'>
             <img src="/assets/logos/linkedin.svg" alt='linkedin logo'/>
           </a>
         </div>

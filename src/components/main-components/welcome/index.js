@@ -14,8 +14,8 @@ export default function Welcome () {
         <p className="banner banner--3">HORARIO</p>
       </div>
       <div className="buttonContainer">
-        <button className="button button--reservar">Reservar mi lugar</button>
-        <button className="button button--agenda">Ver agenda</button>
+        <a href="https://coderhouse.typeform.com/to/saYxC4o3" target='_blank' rel='noreferrer'><button className="button button--reservar">Reservar mi lugar</button></a>
+        <a href="/"><button className="button button--agenda">Ver agenda</button></a>
       </div>
     </section>
   )
