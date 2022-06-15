@@ -27,12 +27,7 @@ This is a paid project that serves as a benefit for ending React's course within
 <!--
 
 Falta:
-
-Importar fuentes:
-Untitled Sans / Regular / 400, 500
-Helvetica Neue / 400
-Gobold Bold / 700
-Gobold / 400
-Cursed Timer ULiL / 400
+Fuente Cursed Timer ULiL / 400
+Ver paginacion de mayor cantidad de sponsors con responsive
 
  -->

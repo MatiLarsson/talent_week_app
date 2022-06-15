@@ -17,10 +17,11 @@ const variants = {
   }
 };
 
-export default function Logo () {
+export default function Logo ({open}) {
   return (
     <motion.li
     variants={variants}
+    className="menu-logo"
     >
       <img src="/assets/logos/talentweek.svg" alt='talent week logo' className="menu-logo"/>
     </motion.li>
