@@ -51,7 +51,7 @@ export default function About () {
       <div className="textContainer">
         <p className="about-text1">¡Súmate a nuestro primer evento sobre talento digital y empleabilidad 100% online para la comunidad de Coderhouse en Latinoamérica!</p>
         <p className="about-text2">Si eres estudiante o graduado de Coderhouse, podrás entrar en contacto con más de 15 empresas líderes en tecnología.</p>
-        <p className="about-text3">¡Completa tu perfil de CoderTalent y prepárate para dar un gran paso profesional!</p>
+        <pgit  className="about-text3">¡Completa tu perfil de CoderTalent y prepárate para dar un gran paso profesional!</p>
       </div>
         <Timer 
           timerDays={timerDays} 
