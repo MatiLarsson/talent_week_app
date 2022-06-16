@@ -29,10 +29,10 @@ const Timer = ({timerDays, timerHours, timerMinutes, timerSeconds}) => {
                     M
                 </section>
             </section>
-            {/* <section>
+            <section>
                 <p>{timerSeconds}</p>
                 <small>S</small>
-            </section> */}
+            </section>
             {/* <div className="about-timer-blurred">
                 <section>
                     <p>{timerDays}</p>

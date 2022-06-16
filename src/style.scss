@@ -42,6 +42,15 @@ $US-medium: "UntitledSansMedium";
 
 $US-regular: "UntitledSansRegular";
 
+@font-face {
+  font-family: "CursedTimer";
+  src: url("./fonts/CursedTimer/CursedTimerULiL.ttf") format("truetype");
+  font-weight: 400;
+}
+
+$CT: "CursedTimer";
+
+
 .navBar {
   position: fixed;
   width: 100vw;
@@ -278,13 +287,10 @@ $US-regular: "UntitledSansRegular";
       padding: 32px 0px;
       .title{
         color: #FFFFFF;
-        font-family: 'Gobold Bold';
-        font-style: italic;
-        font-weight: 700;
+        font-family: $GB-bold;
         font-size: 48px;
         line-height: 63px;
         text-align: center;
-        
       }
     }
     .textContainer{
@@ -292,8 +298,7 @@ $US-regular: "UntitledSansRegular";
       margin: 0px 6px;
       padding: 0px 24px;
       color: #FFFFFF;
-      font-family: 'Untitled Sans';
-      font-weight: 400;
+      font-family: $US-regular;
       font-size: 14px;
       line-height: 17px;
       text-align: center;
@@ -313,17 +318,15 @@ $US-regular: "UntitledSansRegular";
     }
     .about-faltan{
       margin: 32px 0px 0px 0px;
+      padding: 0 3px;
       text-align: center;
-      font-family: 'Gobold Bold';
-      font-style: italic;
-      font-weight: 700;
+      font-family: $GB-bold;
       font-size: 16px;
       line-height: 21px;
       background: linear-gradient(180deg, #F2BAFF 0%, #E9FF63 85.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-fill-color: transparent;
     }
     // .about-timer-blurred{
     //   position: absolute;
@@ -354,9 +357,7 @@ $US-regular: "UntitledSansRegular";
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Cursed Timer ULiL';
-      font-style: normal;
-      font-weight: 400;
+      font-family: $CT;
       font-size: 24px;
       line-height: 26px;
       color: #FFFFFF;
@@ -383,7 +384,7 @@ $US-regular: "UntitledSansRegular";
       }
     }
     .about-mano-cyborg{
-      // position: relative;
+/*       position: relative; */
       display: flex;
       flex-direction: column;
       justify-content:center;
