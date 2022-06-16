@@ -27,7 +27,8 @@ This is a paid project that serves as a benefit for ending React's course within
 <!--
 
 Falta:
-Fuente: Del contador
+
+Fuentes: Conseguir fuentes true type porque safari no los reconoce
 
 Ver paginacion de mayor cantidad de sponsors con responsive
 
