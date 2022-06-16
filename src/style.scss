@@ -328,30 +328,6 @@ $CT: "CursedTimer";
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    // .about-timer-blurred{
-    //   position: absolute;
-    //   top: -20px;
-    //   margin: 16px;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   font-family: 'Cursed Timer ULiL';
-    //   font-style: normal;
-    //   font-weight: 400;
-    //   font-size: 19px;
-    //   line-height: 21px;
-    //   color: #FFFFFF;
-    //   text-shadow: 0px 1.18759px 1.18759px rgba(0, 0, 0, 0.25);
-    //   filter: blur(2.3px);
-    //   section{
-    //     display: flex;
-    //     align-items:baseline;
-    //     margin-right: 12px;
-    //     p{
-    //       margin-right: 12px;
-    //     }
-    //   }
-    // }
     .about-timer{
       margin: 16px;
       display: flex;
@@ -384,7 +360,6 @@ $CT: "CursedTimer";
       }
     }
     .about-mano-cyborg{
-/*       position: relative; */
       display: flex;
       flex-direction: column;
       justify-content:center;
@@ -402,7 +377,6 @@ $CT: "CursedTimer";
       .mano-cyborg{
         width: 164.96px;
         height: 169.37px;
-        // transform: rotate(-5.04deg);
         mix-blend-mode:difference;
       }
     }
