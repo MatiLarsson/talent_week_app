@@ -1,4 +1,3 @@
-
 import Timer from "./Timer"
 import { useState, useEffect } from "react"
 export default function About () {
@@ -43,7 +42,7 @@ export default function About () {
   })
 
   return (
-    <div className="about">
+    <section className="about">
       <img src="/assets/images/mobile/circuito-morado-derecha-mobile.png" className="circuito-derecha" alt='circuito derecha' />
       <img src="/assets/images/mobile/circuito-morado-izq-mobile.png" className="circuito-izq" alt='circuito izquierda' />
       <div className="titleContainer">
@@ -60,6 +59,7 @@ export default function About () {
           timerMinutes={timerMinutes}
           timerSeconds={timerSeconds}
         />
-    </div>
+    </section>
+
   )
 }

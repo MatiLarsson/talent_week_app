@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Timer = ({timerDays, timerHours, timerMinutes, timerSeconds}) => {
   return (
     <div className='timerContainer'>
@@ -31,28 +29,14 @@ const Timer = ({timerDays, timerHours, timerMinutes, timerSeconds}) => {
                     M
                 </section>
             </section>
-            {/* <section>
+            <section>
                 <p>{timerSeconds}</p>
                 <small>S</small>
-            </section> */}
-            {/* <div className="about-timer-blurred">
-                <section>
-                    <p>{timerDays}</p>
-                    <small>D</small>
-                </section>
-                <section>
-                    <p>{timerHours}</p>
-                    <small>H</small>
-                </section>
-                <section>
-                    <p>{timerMinutes}</p>
-                    <small>M</small>
-                </section>
-                <section>
+                <section className='blurred'>
                     <p>{timerSeconds}</p>
-                    <small>S</small>
+                    S
                 </section>
-            </div> */}
+            </section>
         </div>
         
         <div className="about-mano-cyborg">
