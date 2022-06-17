@@ -10,7 +10,7 @@ export default function Footer () {
         </a>
         {
           MENU_OPTIONS.map(option => (
-            <a href={option.to} className="footer-menu-item">{option.name}</a>
+            <a href={option.to} className="footer-menu-item" key={option.name}>{option.name}</a>
           ))
         }
       </div>
