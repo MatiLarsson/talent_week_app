@@ -673,7 +673,7 @@ $CT: "CursedTimer";
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        border-radius: 6.68985px 0px;
+        border-radius: 7px 0px;
         z-index: 10;
         .card-header {
           width: 100%;
@@ -718,6 +718,100 @@ $CT: "CursedTimer";
           text-align: justify;
         }
       }
+    }
+  }
+  // -----------SECCION EXPOSITIONS-----------
+  .expositions {
+    width: 100%;
+    height: 943px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .background-image-container-1 {
+      position: absolute;
+      width: 360px;
+      height: 311px;
+      right: 0px;
+      top: 280px;
+      .circuito-azul-1 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .background-image-container-2 {
+      position: absolute;
+      width: 360px;
+      height: 311px;
+      left: 0;
+      top: 597px;
+      .circuito-azul-2 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: hard-light;
+      opacity: 0.4;
+      transform: rotate(-0.5deg);
+      &.canvas-1 {
+        background: linear-gradient(175.22deg, rgba(0, 0, 0, 0.2) 8.09%, rgba(0, 0, 0, 0) 34.43%);
+        z-index: 1;
+      }
+      &.canvas-2 {
+        background: linear-gradient(67.6deg, rgba(0, 0, 0, 0.2) 8.87%, rgba(0, 0, 0, 0.2) 12.38%, rgba(0, 0, 0, 0.2) 15.38%, rgba(0, 0, 0, 0.2) 17.89%, rgba(0, 0, 0, 0) 39.54%);
+        z-index: 2;
+      }
+      &.canvas-3 {
+        background: linear-gradient(342deg, rgba(0, 0, 0, 0.2) 2.7%, rgba(0, 0, 0, 0) 36.08%);
+        z-index: 3;
+      }
+      &.canvas-4 {
+        background: linear-gradient(341.65deg, rgba(0, 0, 0, 0.2) 5.02%, rgba(0, 0, 0, 0) 21.14%);
+        z-index: 4;
+      }
+      &.canvas-5 {
+        background: linear-gradient(15.25deg, rgba(0, 0, 0, 0.5) 5.04%, rgba(0, 0, 0, 0) 24.59%);
+        z-index: 5;
+      }
+      &.canvas-6 {
+        background: linear-gradient(302.32deg, rgba(0, 0, 0, 0.2) 19.1%, rgba(0, 0, 0, 0) 23.7%);
+        z-index: 6;
+      }
+      &.canvas-7 {
+        background: linear-gradient(184.68deg, rgba(0, 0, 0, 0.2) 15.31%, rgba(0, 0, 0, 0.2) 29.89%, rgba(0, 0, 0, 0.2) 43.27%, rgba(0, 0, 0, 0) 72.25%);
+        z-index: 7;
+      }
+    }
+    .title {
+      margin-top: 40px;
+      font-family: $GB-bold;
+      font-size: 48px;
+      line-height: 62.91px;
+      text-align: center;
+      color: white;
+      z-index: 10;
+    }
+    .expositions-container {
+      width: 90%;
+      z-index: 10;
     }
   }
   // -----------SECCION APPLY-----------
