@@ -245,6 +245,7 @@ $CT: "CursedTimer";
           font-size: 16px;
           line-height: 20px;
           color: black;
+          cursor: pointer;
           &:focus {
             border: none;
             outline: none;
@@ -657,6 +658,7 @@ $CT: "CursedTimer";
           font-size: 14px;
           background-color: #EAFF6A;
           color: black;
+          cursor: pointer;
           &:focus {
             border: none;
             outline: none;
@@ -682,7 +684,7 @@ $CT: "CursedTimer";
     }
     .sponsors-carousel-container {
       margin-top: 12px;
-      width: 100%;
+      width: 90%;
       height: 140px;
       position: relative;
       display: flex;
@@ -704,27 +706,24 @@ $CT: "CursedTimer";
       }
       .next,
       .prev {
-        top: calc(50% - 20px);
+        top: calc(50% - 15px);
         position: absolute;
-        background: white;
-        border-radius: 30px;
-        width: 40px;
-        height: 40px;
+        background: black;
+        border-radius: 7px;
+        width: 30px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         user-select: none;
         cursor: pointer;
-        font-weight: bold;
-        font-size: 18px;
         z-index: 2;
       }
       .next {
-        right: 10px;
+        right: -10px;
       }
       .prev {
-        left: 10px;
-        transform: scale(-1);
+        left: -10px;
       }
       .refresh {
         padding: 10px;
@@ -739,6 +738,21 @@ $CT: "CursedTimer";
         justify-content: center;
         align-items: center;
         cursor: pointer;
+      }
+    }
+    .index {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .index-item{
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+        &.active {
+          background-color: black;
+        }
       }
     }
   }

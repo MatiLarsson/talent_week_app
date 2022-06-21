@@ -11,7 +11,6 @@ export default function Welcome () {
         <p className="banner banner--1">DESCUBRE TU FUTURO</p>
         <p className="banner banner--2">PROFESIONAL</p>
         <p className="banner banner--3">DESDE EL MARTES 26 AL JUEVES 28 DE JULIO</p>
-        <p className="banner banner--3">HORARIO</p>
       </div>
       <div className="buttonContainer">
         <a href="https://coderhouse.typeform.com/to/saYxC4o3" target='_blank' rel='noreferrer'><button className="button button--reservar">Reservar mi lugar</button></a>
