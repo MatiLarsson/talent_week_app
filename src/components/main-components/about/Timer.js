@@ -29,14 +29,14 @@ const Timer = ({timerDays, timerHours, timerMinutes, timerSeconds}) => {
                     M
                 </section>
             </section>
-            <section>
+            {/* <section>
                 <p>{timerSeconds}</p>
                 <small>S</small>
                 <section className='blurred'>
                     <p>{timerSeconds}</p>
                     S
                 </section>
-            </section>
+            </section> */}
         </div>
         
         <div className="about-mano-cyborg">
