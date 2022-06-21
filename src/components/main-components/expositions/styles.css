@@ -1,0 +1,57 @@
+.tabs-container {
+  margin-top: 26px;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.exposition-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  flex-grow: 1;
+  user-select: none;
+  z-index: 10;
+  color: white;
+}
+
+.tab-list,
+.tab-item {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.tab-item {
+  position: relative;
+  cursor: pointer;
+  height: 28px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  color: white;
+  border-radius: 13px;
+}
+
+.tab-item.selected-tab {
+  background-color: #EAFF6A;
+  color: black;
+}
+
