@@ -48,6 +48,9 @@
   user-select: none;
   color: white;
   border-radius: 13px;
+  border-color: #EAFF6A;
+  border-width: .5px;
+  border-style: solid;
 }
 
 .tab-item.selected-tab {
