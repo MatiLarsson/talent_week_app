@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: black;
 }
 
 @font-face {
@@ -259,6 +260,7 @@ $CT: "CursedTimer";
       }
     }
   }
+  // -----------SECCION ABOUT-----------
   .about {
     position: relative;
     width: 100%;
@@ -318,7 +320,7 @@ $CT: "CursedTimer";
       align-items: center;
     }
     .about-faltan{
-      margin: 32px 0px 0px 0px;
+      margin: 40px 0px 10px 0px;
       padding: 0 3px;
       text-align: center;
       font-family: $GB-bold;
@@ -371,17 +373,20 @@ $CT: "CursedTimer";
       .halos-mobile{
         z-index: 1;
         position: absolute;
-        top: 40px;
+        top: 45px;
         left: 50%;
         margin-left: -136px;
+        // opacity: 0.8;
       }
       .mano-cyborg{
+        margin-top: 10px;
         width: 164.96px;
         height: 169.37px;
         mix-blend-mode:difference;
       }
     }
   }
+  // -----------SECCION SPEAKERS-----------
   .speakers {
     width: 100%;
     height: 408px;
@@ -481,6 +486,87 @@ $CT: "CursedTimer";
       }
     }
   }
+  // -----------SECCION ACTIVITIES-----------
+  .activities{
+    position: relative;
+    color: white;
+    height: 640px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .circuito-activities{
+      z-index: 0;
+      position: absolute;
+      width: 207.57px;
+      height: 622.89px;
+      right: 0px;
+      top: 0px;
+      mix-blend-mode:hard-light;
+    }
+    .activities-title{
+      padding-left: 12px;
+      padding-top: 32px;
+      z-index: 1;
+      font-family: $GB-bold;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 46px;
+      color: #000000;
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: #FFFFFF;
+    }
+    .activities-container{
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      margin: 20% 0px;
+      .titles{
+        font-family: $GB-bold;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        background: linear-gradient(180deg, #F2BAFF 0%, #E9FF63 85.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-bottom: 12px;
+      }
+      .text{
+        font-family: $US-regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+      }
+      .activities-exposiciones{
+        width: 50%;
+        p{
+          padding-left: 32px;
+        }
+      }
+      .activities-entrevistas{
+        width: 55%;
+        align-self: flex-end;
+        text-align: right;
+        p{
+          padding-right: 32px;
+        }
+      }
+      .activities-tips{
+        width: 42%;
+        p{
+          padding-left: 32px;
+        }
+      }
+    }
+  }
+
   .apply {
     width: 100%;
     height: 432px;
