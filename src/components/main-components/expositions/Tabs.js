@@ -1,6 +1,6 @@
 import "./styles.css";
 import { useState } from "react";
-import { initialTabs as tabs } from "./ingredients";
+import { ProgramTabs as tabs } from "./Programs";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -11,13 +11,17 @@ export default function Tabs() {
     <>
       <nav className="tab-list">
         {tabs.map((item) => (
-          <motion.div
-            key={item.label}
-            className={item === selectedTab ? "tab-item selected-tab" : "tab-item"}
-            onClick={() => setSelectedTab(item)}
-          >
-            {`${item.label}`}
-          </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              whileTap={{
+                scale: 0.95,
+              }}
+              key={item.label}
+              className={item === selectedTab ? "tab-item selected-tab" : "tab-item"}
+              onClick={() => setSelectedTab(item)}
+            >
+              {`${item.label}`}
+            </motion.div>
         ))}
       </nav>
       <main className="exposition-main-container">
