@@ -1,7 +1,7 @@
 
 export default function Agenda () {
   return (
-    <section>
+    <section className="agenda">
       Agenda
     </section>
   )
