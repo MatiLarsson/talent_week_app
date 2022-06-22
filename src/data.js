@@ -327,6 +327,22 @@ export const SPEAKERS = [
   },
   {
     id: 13,
+    name: 'CAMILA MOSTO',
+    company: 'Kavak',
+    position: 'Talent Acquisition Lead',
+    linkedin: 'https://www.linkedin.com/in/camila-mosto-b39394119/',
+    speakerPhoto: 'assets/images/speakers/camila_mosto.png',
+    companyPhoto: 'https://api.typeform.com/responses/files/0b6e93583ae509f5e0c9b51c8e0a7476b4379d3f3c4bad5f22fe0d8d821532d7/elementos_KAvak_Mesa_de_trabajo_1_copia_4__1_.png',
+    date: {
+      day: 'Jueves 28 de Julio',
+      time: {
+        arg: '15:00 a 15:30 (Arg.)',
+        mex: '13:00 a 13:30 (Mex.)'
+      }
+    }
+  },
+  {
+    id: 14,
     name: 'POR CONFIRMAR',
     company: 'Casai',
     position: 'Por confirmar',
@@ -342,29 +358,13 @@ export const SPEAKERS = [
     }
   },
   {
-    id: 14,
+    id: 15,
     name: 'LUCAS RENCORET',
     company: 'Xepelin',
     position: 'Head of Product',
     linkedin: 'https://www.linkedin.com/in/lucasrencoret/',
     speakerPhoto: 'assets/images/speakers/lucas_rencoret.png',
     companyPhoto: 'https://api.typeform.com/responses/files/2c8637fdb40f2d5be7f58bddcb3916934a116fce7bb114bd077d8dfd8610f8bf/Logo_Xepelin_Digital.png',
-    date: {
-      day: 'Jueves 28 de Julio',
-      time: {
-        arg: '16:00 a 16:30 (Arg.)',
-        mex: '14:00 a 14:30 (Mex.)'
-      }
-    }
-  },
-  {
-    id: 15,
-    name: 'CAMILA MOSTO',
-    company: 'Kavak',
-    position: 'Talent Acquisition Lead',
-    linkedin: 'https://www.linkedin.com/in/camila-mosto-b39394119/',
-    speakerPhoto: 'assets/images/speakers/camila_mosto.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/0b6e93583ae509f5e0c9b51c8e0a7476b4379d3f3c4bad5f22fe0d8d821532d7/elementos_KAvak_Mesa_de_trabajo_1_copia_4__1_.png',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -439,4 +439,136 @@ export const SPEAKERS = [
   },
 ]
 
+export const CRONOGRAMA_MIE = [
+  {
+    id: 0,
+    name: 'AGUSTÍN VERGARA Y POR CONFIRMAR',
+    company: 'BUK',
+    position: 'TECH RECRUITER Y SOFTWARE ENGINEER',
+    arg: '14:00 a 14:30 (Arg.)',
+    mex: '12:00 a 12:30 (Mex.)'
+  },
+  {
+    id: 1,
+    name: 'JIMENA HERNÁNDEZ Y CÉSAR REYES',
+    company: 'KUESKI',
+    position: 'TALENT ACQUISITION SPECIALISTS',
+    arg: '14:30 a 15:00 (Arg.)',
+    mex: '12:30 a 13:00 (Mex.)'
+  },
+  {
+    id: 2,
+    name: 'POR CONFIRMAR',
+    company: 'CERVECERÍA Y MALTERÍA QUILMES',
+    position: 'POR CONFIRMAR',
+    arg: '15:00 a 15:30 (Arg.)',
+    mex: '13:00 a 13:30 (Mex.)'
+  },
+  {
+    id: 3,
+    name: 'DAFNE LOZANO',
+    company: 'BITSO',
+    position: 'RECRUITMENT MARKETING',
+    arg: '15:30 a 16:00 (Arg.)',
+    mex: '13:30 a 14:00 (Mex.)'
+  },
+  {
+    id: 4,
+    name: 'VALERIA LARIOS',
+    company: 'IBM',
+    position: 'EARLY PROFESSIONAL LEAD PARA MÉXICO Y COSTA RICA',
+    arg: '16:00 a 16:30 (Arg.)',
+    mex: '14:00 a 14:30 (Mex.)'
+  },
+  {
+    id: 5,
+    name: 'ÁLVARO RUIZ',
+    company: 'TALENT',
+    position: 'COUNTRY MANAGER MÉXICO',
+    arg: '16:30 a 17:00 (Arg.)',
+    mex: '14:30 a 15:00 (Mex.)'
+  },
+  {
+    id: 6,
+    name: 'DELFINA TAGTACHIAN',
+    company: 'GLOBANT ARGENTINA',
+    position: 'RECRUITER ANALYST IT',
+    arg: '17:00 a 17:30 (Arg.)',
+    mex: '15:00 a 15:30 (Mex.)'
+  },
+  {
+    id: 7,
+    name: 'JEREMÍAS NEMEROVSKY Y MARCELA ÁLVAREZ',
+    company: 'AVATURE',
+    position: 'TALENT ACQUISITION SPECIALIST',
+    arg: '17:30 a 18:00 (Arg.)',
+    mex: '15:30 a 16:00 (Mex.)'
+  }
+]
 
+export const CRONOGRAMA_JUE = [
+  {
+    id: 0,
+    name: 'BRANDON ARREOLA SAUCEDO',
+    company: 'GLOBANT MEXICO',
+    position: 'IT RECRUITER',
+    arg: '14:00 a 14:30 (Arg.)',
+    mex: '12:00 a 12:30 (Mex.)'
+  },
+  {
+    id: 1,
+    name: 'PABLO ANDRÉS GUZZI',
+    company: 'UALA',
+    position: 'CHIEF DATA & ANALYTICS OFFICER',
+    arg: '14:30 a 15:00 (Arg.)',
+    mex: '12:30 a 13:00 (Mex.)'
+  },
+  {
+    id: 2,
+    name: 'CAMILA MOSTO',
+    company: 'KAVAK',
+    position: 'TALENT ACQUISITION LEAD',
+    arg: '15:00 a 15:30 (Arg.)',
+    mex: '13:00 a 13:30 (Mex.)'
+  },
+  {
+    id: 3,
+    name: 'POR CONFIRMAR',
+    company: 'CASAI',
+    position: 'POR CONFIRMAR',
+    arg: '15:30 a 16:00 (Arg.)',
+    mex: '13:30 a 14:00 (Mex.)'
+  },
+  {
+    id: 4,
+    name: 'LUCAS RENCORET',
+    company: 'XEPELIN',
+    position: 'HEAD OF PRODUCT',
+    arg: '16:00 a 16:30 (Arg.)',
+    mex: '14:00 a 14:30 (Mex.)'
+  },
+  {
+    id: 5,
+    name: 'POR CONFIRMAR',
+    company: 'FLY BONDI',
+    position: 'POR CONFIRMAR',
+    arg: '16:30 a 17:00 (Arg.)',
+    mex: '14:30 a 15:00 (Mex.)'
+  },
+  {
+    id: 6,
+    name: 'LIORA GOLDBERG',
+    company: 'XPERTAL',
+    position: 'DIGITAL TALENT ACQUISITION LEAD',
+    arg: '17:00 a 17:30 (Arg.)',
+    mex: '15:00 a 15:30 (Mex.)'
+  },
+  {
+    id: 7,
+    name: 'CECILIA RUIZ Y SOFÍA CAMACHO',
+    company: 'GAIA DESIGN',
+    position: 'CULTURE & COMMUNICATION, DEVELOPMENT MANAGER & RECRUITER',
+    arg: '17:30 a 18:00 (Arg.)',
+    mex: '15:30 a 16:00 (Mex.)'
+  }
+]

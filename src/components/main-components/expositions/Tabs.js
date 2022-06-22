@@ -1,4 +1,3 @@
-import "./styles.css";
 import { useState } from "react";
 import { ProgramTabs as tabs } from "./Programs";
 import { motion, AnimatePresence } from "framer-motion";
@@ -27,6 +26,7 @@ export default function Tabs() {
       <main className="exposition-main-container">
         <AnimatePresence exitBeforeEnter>
           <motion.div
+            className="exposition-content"
             key={selectedTab ? selectedTab.label : "empty"}
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
