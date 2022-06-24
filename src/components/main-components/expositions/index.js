@@ -2,7 +2,7 @@ import Tabs from './Tabs';
 
 export default function Expositions () {
   return (
-    <section className="expositions">
+    <section className="expositions" id='exposiciones'>
       <div className="background-image-container-1">
         <img className="circuito-azul-1" src="/assets/images/mobile/circuito-azul-expositions-1-mobile.png" alt="circuito azul" />
         <div className="canvas canvas-1"></div>

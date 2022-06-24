@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll'
 
 const variants = {
   open: {
@@ -17,7 +18,7 @@ const variants = {
   }
 };
 
-export const MenuItem = ({ option, open }) => {
+export const MenuItem = ({ option, open, toggle }) => {
 
   return (
     <motion.li
@@ -26,10 +27,15 @@ export const MenuItem = ({ option, open }) => {
       whileTap={{ scale: 0.95 }}
       style={open ? { pointerEvents: "auto" } : { pointerEvents: "none" }}
     >
-      <a
-        href={option.to}
+      <Link
+        to={option.to}
+        spy={true}
+        smooth={true}
+        offset={-48}
+        duration={500}
+        onClick={toggle}
         style={open ? { pointerEvents: "auto" } : { pointerEvents: "none" }}
-      ><div className="menu-option">{option.name}</div></a>
+      ><div className="menu-option">{option.name}</div></Link>
     </motion.li>
   );
 };

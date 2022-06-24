@@ -1,7 +1,7 @@
 
 export default function Apply () {
   return (
-    <section className="apply">
+    <section className="apply" id="inscripcion">
       <div className="cyborg-container">
         <img className='cyborg-mujer' src="/assets/images/mobile/cyborg-mobile-mujer.png" alt="mujer cyborg" />
         <div className="gradient-canvas1" />

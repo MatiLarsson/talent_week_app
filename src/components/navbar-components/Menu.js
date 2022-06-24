@@ -33,7 +33,7 @@ export default function Menu () {
       animate={isOpen ? "open" : "closed"}
     >
       <motion.div className="menu-background" variants={sidebar} />
-      <Navigation open={isOpen} style={!isOpen && { pointerEvents: "none" }} />
+      <Navigation toggle={() => toggleOpen()} open={isOpen} style={!isOpen && { pointerEvents: "none" }} />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

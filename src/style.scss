@@ -58,6 +58,9 @@ $CT: "CursedTimer";
   height: 48px;
   background-color: black;
   z-index: 100;
+  @media screen and (min-width: 1024px) {
+    height: 112px;
+  }
   .relative-container {
     position: relative;
     width: 100%;
@@ -75,6 +78,50 @@ $CT: "CursedTimer";
       top: 14px;
       left: 16px;
       cursor: pointer;
+      @media screen and (min-width: 1024px) {
+        width: 258px;
+        top: 31px;
+        left: 65px;
+      }
+    }
+    .desktop-menu {
+      position: absolute;
+      top: 49px;
+      right: 40px;
+      width: 600px;
+      height: 24px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .desktop-menu-item {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-family: $US-regular;
+        font-size: 16px;
+        line-height: 24px;
+        border-bottom: 2px solid transparent;
+        &:hover {
+          border-bottom: 2px solid #EAFF6A;
+        }
+        &.active {
+          border-bottom: 2px solid #EAFF6A;
+        }
+      }
+      .boton-reservar {
+        cursor: pointer;
+        color: #1E1E1E;
+        text-decoration: none;
+        font-family: $US-medium;
+        font-size: 16px;
+        line-height: 24px;
+        width: 200px;
+        height: 48px;
+        background: #EA90FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     nav {
@@ -165,6 +212,9 @@ $CT: "CursedTimer";
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  @media screen and (min-width: 1024px) {
+    padding-top: 112px;
+  }
   // -----------SECCION WELCOME-----------
   .welcome {
     width: 100%;
@@ -174,13 +224,25 @@ $CT: "CursedTimer";
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    @media screen and (min-width: 1024px) {
+      height: 768px;
+      position: relative;
+      align-items: flex-start;
+    }
     .cyborg-container {
       position: relative;
       width: 100%;
       height: 330px;
+      @media screen and (min-width: 1024px) {
+        height: 611px;
+        width: 931px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
       .cyborg {
         position: absolute;
-        top: 0px;
+        top: 0;
         right: 0;
       }
       .gradient-canvas1 {
@@ -203,13 +265,22 @@ $CT: "CursedTimer";
       }
     }
     .bannerContainer {
+      margin-top: 90px;
+      padding-left: 72px;
+      z-index: 3;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media screen and (min-width: 1024px) {
+        align-items: flex-start;
+      }
       .banner {
         text-align: center;
         padding: 0 5px;
         z-index: 3;
+        @media screen and (min-width: 1024px) {
+          text-align: left;
+        }
       }
       .banner--1 {
         margin-top: -15px;
@@ -220,6 +291,11 @@ $CT: "CursedTimer";
         -webkit-text-fill-color: transparent;
         background-clip: text;
         line-height: 39px;
+        @media screen and (min-width: 1024px) {
+          font-size: 64px;
+          line-height: 84px;
+          padding: 0 8px;
+        }
       }
       .banner--2 {
         margin-top: 5px;
@@ -230,6 +306,10 @@ $CT: "CursedTimer";
         -webkit-text-fill-color: transparent;
         background-clip: text;
         line-height: 63px;
+        @media screen and (min-width: 1024px) {
+          font-size: 100px;
+          line-height: 131px;
+        }
       }
       .banner--3 {
         margin: 10px 0;
@@ -240,11 +320,23 @@ $CT: "CursedTimer";
         -webkit-text-fill-color: transparent;
         background-clip: text;
         line-height: 21px;
+        @media screen and (min-width: 1024px) {
+          margin-top: 20px;
+          font-size: 36px;
+          line-height: 46px;
+        }
       }
     }
     .buttonContainer {
       display: flex;
       flex-direction: column;
+      @media screen and (min-width: 1024px) {
+        z-index: 3;
+        margin-top: 100px;
+        flex-direction: row;
+        padding-left: 72px;
+        gap: 24px;
+      }
       a {
         text-decoration: none;
         button {
@@ -265,6 +357,12 @@ $CT: "CursedTimer";
           &:focus {
             border: none;
             outline: none;
+          }
+          @media screen and (min-width: 1024px) {
+            width: 400px;
+            height: 68px;
+            font-size: 24px;
+            line-height: 30px;
           }
         }
       }
@@ -738,6 +836,7 @@ $CT: "CursedTimer";
   }
   // -----------SECCION EXPOSITIONS-----------
   .expositions {
+    margin-top: 16px;
     width: 100%;
     height: 1850px;
     background-color: black;
