@@ -29,7 +29,7 @@ export default function Agenda () {
             <div className="card-date-container"><p className="card-date-text">DEL 11 AL 20 DE JULIO</p></div>
             <p className="card-title">INSCRIPCIÓN DE NUESTRA COMUNIDAD</p>
           </div>
-          <div className="card-text">Se realizará a través de un formulario en el que se pedirán datos de contacto, CV, LinkedIn, portfolio, manejo de tecnologías y herramientas,y empresas de interés.</div>
+          <div className="card-text">Se realizará a través de un formulario en el que se pedirán datos de contacto, CV, LinkedIn, portfolio, manejo de tecnologías y herramientas, y empresas de interés.</div>
         </div>
       </div>
       <div className="card-border">
