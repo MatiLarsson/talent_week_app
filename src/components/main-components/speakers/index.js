@@ -13,7 +13,7 @@ export default function Speakers () {
   }, []);
 
   return (
-    <section className="speakers">
+    <section className="speakers" id='speakers'>
       <div className="speakers-title">Speakers</div>
       <motion.div
         ref={carousel}

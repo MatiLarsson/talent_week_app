@@ -1,7 +1,7 @@
 
 export default function Agenda () {
   return (
-    <section className="agenda">
+    <section className="agenda" id='agenda'>
       <div className="background-image-container-1">
         <img className="circuito-azul-1" src="/assets/images/mobile/circuito-azul-agenda-1-mobile.png" alt="circuito azul" />
         <div className="canvas canvas-1"></div>

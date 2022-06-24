@@ -1,4 +1,5 @@
 import Menu from 'components/navbar-components/Menu';
+import DesktopMenu from 'components/navbar-components/DesktopMenu';
 import useWindowSize from './hooks/useWindowSize';
 import ProgressBar from 'components/navbar-components/ProgressBar';
 
@@ -12,7 +13,8 @@ export default function NavBar () {
         </a>
         {
           (width <= 1024)
-            && <Menu />
+            ? <Menu />
+            : <DesktopMenu />
         }
         <ProgressBar />
       </div>

@@ -1,19 +1,23 @@
 export const MENU_OPTIONS = [
   {
     name:'Speakers',
-    to: '/'
+    to: 'speakers'
   },
   {
     name: 'Agenda',
-    to: '/'
+    to: 'agenda'
+  },
+  {
+    name: 'Exposiciones',
+    to: 'exposiciones'
   },
   {
     name: 'Sponsors',
-    to: '/'
+    to: 'sponsors'
   },
   {
     name: 'Inscripción',
-    to: '/'
+    to: 'inscripcion'
   }
 ];
 
