@@ -11,6 +11,7 @@ export default function Welcome () {
           <img src={width >= 1024 ? "/assets/images/desktop/cyborg-desktop.png" : "/assets/images/mobile/cyborg-mobile.png"} className="cyborg" alt='cyborg' />
           <div className="gradient-canvas1" />
           <div className="gradient-canvas2" />
+          <div className="gradient-canvas3" />
         </div>
         <div className="bannerContainer">
           <p className="banner banner--1">DESCUBRE TU FUTURO</p>
