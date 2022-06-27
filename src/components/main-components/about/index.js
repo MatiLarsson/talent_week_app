@@ -1,7 +1,10 @@
 import Timer from "./Timer"
 import { useState, useEffect } from "react"
-export default function About () {
+import useWindowSize from 'components/hooks/useWindowSize';
 
+export default function About () {
+  const [width] = useWindowSize();
+  
   const [timerDays, setTimerDays] = useState();
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
@@ -43,8 +46,8 @@ export default function About () {
 
   return (
     <section className="about">
-      <img src="/assets/images/mobile/circuito-morado-derecha-mobile.png" className="circuito-derecha" alt='circuito derecha' />
-      <img src="/assets/images/mobile/circuito-morado-izq-mobile.png" className="circuito-izq" alt='circuito izquierda' />
+      <img src={width >= 1024 ? "/assets/images/desktop/circuito-morado-der-desktop.png" : "/assets/images/mobile/circuito-morado-derecha-mobile.png"} className="circuito-derecha" alt='circuito derecha' />
+      <img src={width >= 1024 ? "/assets/images/mobile/circuito-morado-izq-mobile.png" : "/assets/images/desktop/circuito-morado-izq-desktop.png"} className="circuito-izq" alt='circuito izquierda' />
       <div className="titleContainer">
         <p className="title">TALENTWEEK</p>
       </div>
