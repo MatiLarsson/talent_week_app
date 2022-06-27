@@ -1,4 +1,8 @@
+import useWindowSize from 'components/hooks/useWindowSize';
+
 const Timer = ({timerDays, timerHours, timerMinutes, timerSeconds}) => {
+  const [width] = useWindowSize();
+  
   return (
     <div className='timerContainer'>
         <div className="about-faltan">
@@ -40,8 +44,8 @@ const Timer = ({timerDays, timerHours, timerMinutes, timerSeconds}) => {
         </div>
         
         <div className="about-mano-cyborg">
-            <img src="/assets/images/mobile/halos-mobile.png" className="halos-mobile" alt='halos mobile' />
-            <img src="/assets/images/mobile/mano-cyborg-mobile.png" className="mano-cyborg" alt='mano cyborg' />
+            <img src={width >= 1024 ? "/assets/images/desktop/halos-desktop.png" : "/assets/images/mobile/halos-mobile.png"} className="halos" alt='halos' />
+            <img src={width >=1024 ? "/assets/images/desktop/mano-cyborg-desktop.png" : "/assets/images/mobile/mano-cyborg-mobile.png"} className="mano-cyborg" alt='mano cyborg' />
         </div>
     </div>
   )
