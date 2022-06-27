@@ -5,6 +5,7 @@ import Activities from "components/main-components/activities"
 import Agenda from "components/main-components/agenda"
 import Expositions from "components/main-components/expositions"
 import Apply from "components/main-components/apply"
+import Form from "components/main-components/form"
 import Sponsors from "components/main-components/sponsors"
 
 export default function Main () {
@@ -17,6 +18,7 @@ export default function Main () {
       <Agenda />
       <Expositions />
       <Apply />
+      <Form />
       <Sponsors />
     </div>
   )
