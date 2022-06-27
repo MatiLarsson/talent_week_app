@@ -1,5 +1,6 @@
 import { MENU_OPTIONS } from "data"
 import { CODERHOUSE_OPTIONS } from "data"
+import { Link } from "react-scroll"
 
 export default function Footer () {
   return (
@@ -10,7 +11,17 @@ export default function Footer () {
         </a>
         {
           MENU_OPTIONS.map(option => (
-            <a href={option.to} className="footer-menu-item">{option.name}</a>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-48}
+              duration={500}
+              to={option.to}
+              className="footer-menu-item"
+              key={option.name}
+            >
+              {option.name}
+            </Link>
           ))
         }
       </div>

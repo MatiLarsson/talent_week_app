@@ -12,12 +12,12 @@ const variants = {
   }
 };
 
-export const Navigation = ({open}) => (
+export const Navigation = ({open, toggle}) => (
   <motion.ul variants={variants}>
     <Logo />
     {
       MENU_OPTIONS.map(option => (
-        <MenuItem option={option} open={open} key={option.name} />
+        <MenuItem toggle={toggle} option={option} open={open} key={option.name} />
       ))
     }
   </motion.ul>

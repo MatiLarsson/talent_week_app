@@ -58,89 +58,148 @@ $CT: "CursedTimer";
   height: 48px;
   background-color: black;
   z-index: 100;
-  .coderhouse {
-    width: 98px;
-    position: absolute;
-    top: 14px;
-    left: 16px;
-    cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    height: 112px;
   }
-
-  nav {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    bottom: 0;
-    width: 240px;
-    height: 640px;
-    pointer-events: none;
-    .menu-background {
+  .relative-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .progress-bar {
       position: absolute;
-      top: 0;
-      left: 0;
+      width: 100%;
+      height: 1px;
       bottom: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      pointer-events: none;
+      background-color: #E9FF63;
     }
-
-    button {
-      outline: none;
-      border: none;
-      user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
+    .coderhouse {
+      width: 98px;
+      position: absolute;
+      top: 14px;
+      left: 16px;
       cursor: pointer;
+      @media screen and (min-width: 1024px) {
+        width: 258px;
+        top: 31px;
+        left: 65px;
+      }
+    }
+    .desktop-menu {
       position: absolute;
-      top: 12px;
-      right: 12px;
-      width: 24px;
+      top: 49px;
+      right: 40px;
+      width: 600px;
       height: 24px;
-      background: transparent;
-      -webkit-filter: invert(1);
-      filter: invert(100%);
-      pointer-events: auto;
-    }
-
-    ul,
-    li {
-      margin: 0;
-      padding: 0;
-    }
-
-    ul {
-      position: absolute;
-      top: 96px;
-      right: 0;
-      padding-right: 32px;
-      width: 100%;
-    }
-
-    li {
-      list-style: none;
       display: flex;
-      justify-content: flex-end;
-      font-family: $US-regular;
-      color: white;
-      margin-bottom: 16px;
-      a {
-        text-decoration: none;
+      justify-content: space-around;
+      align-items: center;
+      .desktop-menu-item {
         cursor: pointer;
         color: white;
-        pointer-events: auto;
+        text-decoration: none;
+        font-family: $US-regular;
+        font-size: 16px;
+        line-height: 24px;
+        border-bottom: 2px solid transparent;
+        &:hover {
+          border-bottom: 2px solid #EAFF6A;
+        }
+        &.active {
+          border-bottom: 2px solid #EAFF6A;
+        }
       }
-      .menu-logo {
-        width: 90px;
+      .boton-reservar {
+        cursor: pointer;
+        color: #1E1E1E;
+        text-decoration: none;
+        font-family: $US-medium;
+        font-size: 16px;
+        line-height: 24px;
+        width: 200px;
+        height: 48px;
+        background: #EA90FF;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      bottom: 0;
+      width: 240px;
+      height: 640px;
+      pointer-events: none;
+      .menu-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
         pointer-events: none;
       }
-      .menu-option {
-        font-size: 16px;
+  
+      button {
+        outline: none;
+        border: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: pointer;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 24px;
+        height: 24px;
+        background: transparent;
+        -webkit-filter: invert(1);
+        filter: invert(100%);
+        pointer-events: auto;
+      }
+  
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+  
+      ul {
+        position: absolute;
+        top: 96px;
+        right: 0;
+        padding-right: 32px;
         width: 100%;
-        margin-right: 8px;
-        text-align: end;
+      }
+  
+      li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        font-family: $US-regular;
+        color: white;
+        margin-bottom: 16px;
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          color: white;
+          pointer-events: auto;
+        }
+        .menu-logo {
+          width: 90px;
+          display: flex;
+          justify-content: flex-end;
+          pointer-events: none;
+        }
+        .menu-option {
+          font-size: 16px;
+          width: 100%;
+          margin-right: 8px;
+          text-align: end;
+        }
       }
     }
   }
@@ -153,6 +212,9 @@ $CT: "CursedTimer";
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  @media screen and (min-width: 1024px) {
+    padding-top: 112px;
+  }
   // -----------SECCION WELCOME-----------
   .welcome {
     width: 100%;
@@ -162,13 +224,28 @@ $CT: "CursedTimer";
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    @media screen and (min-width: 1024px) {
+      height: 768px;
+      position: relative;
+      align-items: flex-start;
+    }
     .cyborg-container {
       position: relative;
       width: 100%;
       height: 330px;
-      .cyborg {
+      @media screen and (min-width: 1024px) {
+        height: 611px;
+        width: 931px;
         position: absolute;
-        top: 0px;
+        top: 0;
+        right: 0;
+      }
+      .cyborg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
         right: 0;
       }
       .gradient-canvas1 {
@@ -189,16 +266,36 @@ $CT: "CursedTimer";
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 71.43%, #000000 97.01%);
         z-index: 2;
       }
+      .gradient-canvas3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%);
+        z-index: 3;
+      }
     }
     .bannerContainer {
+      z-index: 4;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media screen and (min-width: 1024px) {
+        align-items: flex-start;
+        margin-top: 90px;
+        padding-left: 72px;
+      }
       .banner {
         text-align: center;
         padding: 0 5px;
+        z-index: 3;
+        @media screen and (min-width: 1024px) {
+          text-align: left;
+        }
       }
       .banner--1 {
+        margin-top: -15px;
         font-family: $GB-bold;
         font-size: 30px;
         background: linear-gradient(180deg, #F2BAFF 0%, #E9FF63 85.71%);
@@ -206,8 +303,14 @@ $CT: "CursedTimer";
         -webkit-text-fill-color: transparent;
         background-clip: text;
         line-height: 39px;
+        @media screen and (min-width: 1024px) {
+          font-size: 64px;
+          line-height: 84px;
+          padding: 0 8px;
+        }
       }
       .banner--2 {
+        margin-top: 5px;
         font-family: $GB-bold;
         font-size: 48px;
         background: linear-gradient(180deg, #F2BAFF 0%, #E9FF63 85.71%);
@@ -215,8 +318,13 @@ $CT: "CursedTimer";
         -webkit-text-fill-color: transparent;
         background-clip: text;
         line-height: 63px;
+        @media screen and (min-width: 1024px) {
+          font-size: 100px;
+          line-height: 131px;
+        }
       }
       .banner--3 {
+        margin: 10px 0;
         font-family: $GB-regular;
         font-size: 16px;
         background: linear-gradient(180deg, #F2BAFF 0%, #83AEFB 85.71%);
@@ -224,11 +332,23 @@ $CT: "CursedTimer";
         -webkit-text-fill-color: transparent;
         background-clip: text;
         line-height: 21px;
+        @media screen and (min-width: 1024px) {
+          margin-top: 20px;
+          font-size: 36px;
+          line-height: 46px;
+        }
       }
     }
     .buttonContainer {
       display: flex;
       flex-direction: column;
+      @media screen and (min-width: 1024px) {
+        z-index: 3;
+        margin-top: 100px;
+        flex-direction: row;
+        padding-left: 72px;
+        gap: 24px;
+      }
       a {
         text-decoration: none;
         button {
@@ -245,9 +365,16 @@ $CT: "CursedTimer";
           font-size: 16px;
           line-height: 20px;
           color: black;
+          cursor: pointer;
           &:focus {
             border: none;
             outline: none;
+          }
+          @media screen and (min-width: 1024px) {
+            width: 400px;
+            height: 68px;
+            font-size: 24px;
+            line-height: 30px;
           }
         }
       }
@@ -395,11 +522,20 @@ $CT: "CursedTimer";
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    @media screen and (min-width: 1024px) {
+      height: 707px;
+    }
     .speakers-title {
       font-family: $GB-bold;
       font-size: 48px;
       color: white;
       margin-top: 32px;
+      @media screen and (min-width: 1024px) {
+        font-size: 72px;
+        width: 100%;
+        text-align: left;
+        padding-left: 72px;
+      }
     }
     .speakers-carousel {
       width: 100%;
@@ -409,11 +545,19 @@ $CT: "CursedTimer";
       overflow: hidden;
       padding-left: 8px;
       padding-right: 58px;
+      @media screen and (min-width: 1024px) {
+        padding-left: 72px;
+        height: 449px;
+        margin-top: 50px;
+      }
       .speakers-inner-carousel {
         width: 100%;
         height: 100%;
         display: flex;
         gap: 8px;
+        @media screen and (min-width: 1024px) {
+          gap: 16px;
+        }
         .speaker-card-item {
           width: 100%;
           .speaker-card {
@@ -424,12 +568,19 @@ $CT: "CursedTimer";
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-start;
+            @media screen and (min-width: 1024px) {
+              width: 316px;
+              height: 449px;
+            }
             .speaker-image {
               width: 100%;
               height: 100%;
               object-fit: cover;
               border-radius: 13px 0 0 0;
               pointer-events: none;
+              @media screen and (min-width: 1024px) {
+                border-radius: 25px 0px 0px 0px;
+              }
             }
             a {
               z-index: 10;
@@ -440,6 +591,17 @@ $CT: "CursedTimer";
               right: 8px;
               width: 23px;
               height: 23px;
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                opacity: 0.8;
+                transform: scale(1.1);
+              }
+              @media screen and (min-width: 1024px) {
+                top: 16px;
+                right: 16px;
+                width: 31px;
+                height: 31px;
+              }
               .linkedInCard {
                 object-fit: contain;
                 width: 100%;
@@ -460,12 +622,20 @@ $CT: "CursedTimer";
               padding-left: 8px;
               padding-bottom: 16px;
               background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.02%, rgba(0, 0, 0, 0.481865) 68.13%, #000000 100%);
+              @media screen and (min-width: 1024px) {
+                padding-left: 20px;
+                padding-bottom: 18px;
+              }
               .speaker-name {
                 font-family: $GB-bold;
                 font-size: 16px;
                 color: white;
                 line-height: 21px;
                 margin-bottom: 8px;
+                @media screen and (min-width: 1024px) {
+                  font-size: 24px;
+                  margin-bottom: 12px;
+                }
               }
               .speaker-position {
                 font-family: $US-regular;
@@ -473,12 +643,20 @@ $CT: "CursedTimer";
                 color: white;
                 line-height: 17px;
                 margin-bottom: 8px;
+                @media screen and (min-width: 1024px) {
+                  font-size: 20px;
+                  margin-bottom: 12px;
+                }
               }
               .speaker-company {
                 font-family: $US-medium;
                 font-size: 14px;
                 color: #EAFF6A;
                 line-height: 17px;
+                @media screen and (min-width: 1024px) {
+                  font-size: 20px;
+                  margin-bottom: 20px;
+                }
               }
             }
           }
@@ -566,7 +744,470 @@ $CT: "CursedTimer";
       }
     }
   }
-
+  // -----------SECCION AGENDA-----------
+  .agenda {
+    width: 100%;
+    height: 984px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @media screen and (min-width: 1024px) {
+      height: 1200px;
+    }
+    .background-image-container-1 {
+      position: absolute;
+      width: 360px;
+      height: 311px;
+      right: 8.5px;
+      top: 55px;
+      .circuito-azul-1 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .background-image-container-2 {
+      position: absolute;
+      width: 276px;
+      height: 515px;
+      left: 0;
+      top: 485px;
+      .circuito-azul-2 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: hard-light;
+      opacity: 0.4;
+      transform: rotate(-0.5deg);
+      &.canvas-1 {
+        background: linear-gradient(175.22deg, rgba(0, 0, 0, 0.2) 8.09%, rgba(0, 0, 0, 0) 34.43%);
+        z-index: 1;
+      }
+      &.canvas-2 {
+        background: linear-gradient(67.6deg, rgba(0, 0, 0, 0.2) 8.87%, rgba(0, 0, 0, 0.2) 12.38%, rgba(0, 0, 0, 0.2) 15.38%, rgba(0, 0, 0, 0.2) 17.89%, rgba(0, 0, 0, 0) 39.54%);
+        z-index: 2;
+      }
+      &.canvas-3 {
+        background: linear-gradient(342deg, rgba(0, 0, 0, 0.2) 2.7%, rgba(0, 0, 0, 0) 36.08%);
+        z-index: 3;
+      }
+      &.canvas-4 {
+        background: linear-gradient(341.65deg, rgba(0, 0, 0, 0.2) 5.02%, rgba(0, 0, 0, 0) 21.14%);
+        z-index: 4;
+      }
+      &.canvas-5 {
+        background: linear-gradient(15.25deg, rgba(0, 0, 0, 0.5) 5.04%, rgba(0, 0, 0, 0) 24.59%);
+        z-index: 5;
+      }
+      &.canvas-6 {
+        background: linear-gradient(302.32deg, rgba(0, 0, 0, 0.2) 19.1%, rgba(0, 0, 0, 0) 23.7%);
+        z-index: 6;
+      }
+      &.canvas-7 {
+        background: linear-gradient(184.68deg, rgba(0, 0, 0, 0.2) 15.31%, rgba(0, 0, 0, 0.2) 29.89%, rgba(0, 0, 0, 0.2) 43.27%, rgba(0, 0, 0, 0) 72.25%);
+        z-index: 7;
+      }
+    }
+    .title {
+      font-family: $GB-bold;
+      font-size: 48px;
+      line-height: 62.91px;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      z-index: 10;
+      width: 100%;
+      @media screen and (min-width: 1024px) {
+        font-size: 72px;
+        line-height: 95px;
+        text-align: left;
+        padding-left: 72px;
+      }
+    }
+    .card-border {
+      width: 327px;
+      border-radius: 7px 0px;
+      background: linear-gradient(180deg, #F2BAFF 0%, #E9FF63 85.71%);
+      z-index: 9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 16px;
+      @media screen and (min-width: 1024px) {
+        width: 880px;
+        border-radius: 25px 0px;
+        margin-top: 20px;
+      }
+      .card {
+        width: 327px;
+        margin: 1.5px;
+        padding: 14px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 7px 0px;
+        z-index: 10;
+        @media screen and (min-width: 1024px) {
+          width: 880px;
+          border-radius: 25px 0;
+          margin: 3px;
+        }
+        .card-header {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          @media screen and (min-width: 1024px) {
+            flex-direction: row-reverse;
+            justify-content: center;
+          }
+          .card-date-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: rgba(233, 255, 99, 0.2);
+            border-radius: 5.35728px;
+            padding: 5px 10px;
+            @media screen and (min-width: 1024px) {
+              width: 300px;
+              height: 60px;
+            }
+            .card-date-text {
+              font-family: $GB-regular;
+              font-size: 14px;
+              line-height: 18px;
+              padding: 0 3px;
+              background: linear-gradient(180deg, #F2BAFF 0%, #E9FF63 85.71%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-align: center;
+              @media screen and (min-width: 1024px) {
+                font-size: 24px;
+                line-height: 28px;
+              }
+            }
+          }
+          .card-title {
+            margin-top: 16px;
+            font-family: $GB-regular;
+            font-size: 16px;
+            line-height: 20.64px;
+            color: white;
+            width: 100%;
+            text-align: left;
+            @media screen and (min-width: 1024px) {
+              font-size: 24px;
+              line-height: 28px;
+              width: 500px;
+              height: 50px;
+            }
+          }
+        }
+        .card-text {
+          margin-top: 10px;
+          font-family: $US-regular;
+          font-size: 14px;
+          color: white;
+          line-height: 17px;
+          text-align: justify;
+          @media screen and (min-width: 1024px) {
+            font-size: 24px;
+            line-height: 28px;
+            padding: 16px;
+          }
+        }
+      }
+    }
+  }
+  // -----------SECCION EXPOSITIONS-----------
+  .expositions {
+    margin-top: 16px;
+    width: 100%;
+    height: 1850px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .background-image-container-1 {
+      position: absolute;
+      width: 360px;
+      height: 311px;
+      right: 0px;
+      top: 280px;
+      .circuito-azul-1 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .background-image-container-2 {
+      position: absolute;
+      width: 360px;
+      height: 311px;
+      left: 0;
+      top: 597px;
+      .circuito-azul-2 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .background-image-container-3 {
+      position: absolute;
+      width: 360px;
+      height: 311px;
+      right: 0px;
+      top: 914px;
+      .circuito-azul-1 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .background-image-container-4 {
+      position: absolute;
+      width: 360px;
+      height: 311px;
+      left: 0;
+      top: 1231px;
+      .circuito-azul-2 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .background-image-container-5 {
+      position: absolute;
+      width: 360px;
+      height: 311px;
+      right: 0px;
+      top: 1548px;
+      .circuito-azul-1 {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+        transform: rotate(-0.5deg);
+      }
+    }
+    .canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: hard-light;
+      opacity: 0.4;
+      transform: rotate(-0.5deg);
+      &.canvas-1 {
+        background: linear-gradient(175.22deg, rgba(0, 0, 0, 0.2) 8.09%, rgba(0, 0, 0, 0) 34.43%);
+        z-index: 1;
+      }
+      &.canvas-2 {
+        background: linear-gradient(67.6deg, rgba(0, 0, 0, 0.2) 8.87%, rgba(0, 0, 0, 0.2) 12.38%, rgba(0, 0, 0, 0.2) 15.38%, rgba(0, 0, 0, 0.2) 17.89%, rgba(0, 0, 0, 0) 39.54%);
+        z-index: 2;
+      }
+      &.canvas-3 {
+        background: linear-gradient(342deg, rgba(0, 0, 0, 0.2) 2.7%, rgba(0, 0, 0, 0) 36.08%);
+        z-index: 3;
+      }
+      &.canvas-4 {
+        background: linear-gradient(341.65deg, rgba(0, 0, 0, 0.2) 5.02%, rgba(0, 0, 0, 0) 21.14%);
+        z-index: 4;
+      }
+      &.canvas-5 {
+        background: linear-gradient(15.25deg, rgba(0, 0, 0, 0.5) 5.04%, rgba(0, 0, 0, 0) 24.59%);
+        z-index: 5;
+      }
+      &.canvas-6 {
+        background: linear-gradient(302.32deg, rgba(0, 0, 0, 0.2) 19.1%, rgba(0, 0, 0, 0) 23.7%);
+        z-index: 6;
+      }
+      &.canvas-7 {
+        background: linear-gradient(184.68deg, rgba(0, 0, 0, 0.2) 15.31%, rgba(0, 0, 0, 0.2) 29.89%, rgba(0, 0, 0, 0.2) 43.27%, rgba(0, 0, 0, 0) 72.25%);
+        z-index: 7;
+      }
+    }
+    .title {
+      margin-top: 40px;
+      font-family: $GB-bold;
+      font-size: 48px;
+      line-height: 62.91px;
+      text-align: center;
+      color: white;
+      z-index: 10;
+    }
+    .tabs-container {
+      margin-top: 26px;
+      width: 90%;
+      height: 1750px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      .tab-list,
+      .tab-item {
+        list-style: none;
+        font-family: $GB-regular;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+      }
+      .tab-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+        .tab-item {
+          cursor: pointer;
+          height: 28px;
+          width: 160px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          user-select: none;
+          color: white;
+          border-radius: 13px;
+          border-color: #EAFF6A;
+          border-width: .5px;
+          border-style: solid;
+        }
+        .tab-item.selected-tab {
+          background-color: #EAFF6A;
+          color: black;
+        }
+      }
+      .exposition-main-container {
+        width: 100%;
+        height: 1600px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-grow: 1;
+        user-select: none;
+        .exposition-content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          overflow: hidden;
+          .program-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: stretch;
+            width: 100%;
+            height: 200px;
+            position: relative;
+            .circuito {
+              position: absolute;
+              width: 266px;
+              height: 114px;
+              top: 3px;
+              left: calc(50% - 133px);
+            }
+            .card-names-and-times {
+              width: 100%;
+              padding-top: 30px;
+              display: flex;
+              flex-grow: 1;
+              justify-content: stretch;
+              align-items: center;
+              .card-names {
+                font-family: $GB-bold;
+                font-size: 18px;
+                line-height: 24px;
+                width: 50%;
+                padding-right: 20px;
+                display: flex;
+                flex-grow: 1;
+                justify-content: flex-start;
+                align-content: flex-end;
+                text-align: left;
+                color: white;
+              }
+              .card-times {
+                padding-bottom: 10px;
+                width: 50%;
+                display: flex;
+                flex-grow: 1;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: flex-end;
+                p {
+                  font-family: $GB-regular;
+                  font-size: 14px;
+                  text-align: right;
+                  color: white;
+                }
+              }
+            }
+            .card-details {
+              font-family: $GB-regular;
+              font-size: 14px;
+              width: 100%;
+              text-align: center;
+              flex-grow: 1;
+              color: white;
+              .company-color {
+                color: #EAFF6A;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // -----------SECCION APPLY-----------
   .apply {
     width: 100%;
     height: 432px;
@@ -657,6 +1298,7 @@ $CT: "CursedTimer";
           font-size: 14px;
           background-color: #EAFF6A;
           color: black;
+          cursor: pointer;
           &:focus {
             border: none;
             outline: none;
@@ -665,6 +1307,35 @@ $CT: "CursedTimer";
       }
     }
   }
+  // -----------SECCION FORM-----------
+  .form {
+    width: 100%;
+    height: 968px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .form-title {
+      margin-top: 40px;
+      width: 100%;
+      padding: 0 16px;
+      text-align: left;
+      font-family: $GB-bold;
+      font-size: 40px;
+      color: white;
+    }
+    .form-subtitle {
+      margin-top: 8px;
+      width: 100%;
+      padding: 0 20px;
+      text-align: left;
+      font-family: $US-regular;
+      font-size: 14px;
+      color: white;
+    }
+  }
+  // -----------SECCION SPONSORS-----------
   .sponsors {
     padding: 47px 16px 0 16px;
     width: 100%;
@@ -682,7 +1353,7 @@ $CT: "CursedTimer";
     }
     .sponsors-carousel-container {
       margin-top: 12px;
-      width: 100%;
+      width: 90%;
       height: 140px;
       position: relative;
       display: flex;
@@ -704,27 +1375,24 @@ $CT: "CursedTimer";
       }
       .next,
       .prev {
-        top: calc(50% - 20px);
+        top: calc(50% - 15px);
         position: absolute;
-        background: white;
-        border-radius: 30px;
-        width: 40px;
-        height: 40px;
+        background: black;
+        border-radius: 7px;
+        width: 30px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         user-select: none;
         cursor: pointer;
-        font-weight: bold;
-        font-size: 18px;
         z-index: 2;
       }
       .next {
-        right: 10px;
+        right: -10px;
       }
       .prev {
-        left: 10px;
-        transform: scale(-1);
+        left: -10px;
       }
       .refresh {
         padding: 10px;
@@ -739,6 +1407,21 @@ $CT: "CursedTimer";
         justify-content: center;
         align-items: center;
         cursor: pointer;
+      }
+    }
+    .index {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .index-item{
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+        &.active {
+          background-color: black;
+        }
       }
     }
   }
