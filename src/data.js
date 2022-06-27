@@ -41,82 +41,98 @@ export const SPONSORS = [
   {
     id: 0,
     name: 'Xepelin',
-    src: 'assets/images/sponsors/xepelin.png',
+    src_mobile: 'assets/images/sponsors/mobile/xepelin.png',
+    src_desktop: 'assets/images/sponsors/desktop/xepelin.png',
   },
   {
     id: 1,
     name: 'IBM',
-    src: 'assets/images/sponsors/ibm.jpg',
+    src_mobile: 'assets/images/sponsors/mobile/ibm.png',
+    src_desktop: 'assets/images/sponsors/desktop/ibm.png',
   },
   {
     id: 2,
     name: 'Talent',
-    src: 'assets/images/sponsors/talent.png',
+    src_mobile: 'assets/images/sponsors/mobile/talent.png',
+    src_desktop: 'assets/images/sponsors/desktop/talent.png',
   },
   {
     id: 3,
     name: 'Gaia Design',
-    src: 'assets/images/sponsors/gaia.jpg',
+    src_mobile: 'assets/images/sponsors/mobile/gaia.png',
+    src_desktop: 'assets/images/sponsors/desktop/gaia.png',
   },
   {
     id: 4,
     name: 'Bitso',
-    src: 'assets/images/sponsors/bitso.png',
+    src_mobile: 'assets/images/sponsors/mobile/bitso.png',
+    src_desktop: 'assets/images/sponsors/desktop/bitso.png',
   },
   {
     id: 5,
     name: 'Kueski',
-    src: 'assets/images/sponsors/kueski.png',
+    src_mobile: 'assets/images/sponsors/mobile/kueski.png',
+    src_desktop: 'assets/images/sponsors/desktop/kueski.png',
   },
   {
     id: 6,
     name: 'Casai',
-    src: 'assets/images/sponsors/casai.png',
+    src_mobile: 'assets/images/sponsors/mobile/casai.png',
+    src_desktop: 'assets/images/sponsors/desktop/casai.png',
   },
   {
     id: 7,
     name: 'Globant Argentina',
-    src: 'assets/images/sponsors/globant.png',
+    src_mobile: 'assets/images/sponsors/mobile/globant.png',
+    src_desktop: 'assets/images/sponsors/desktop/globant.png',
   },
   {
     id: 8,
     name: 'Xpertal',
-    src: 'assets/images/sponsors/xpertal.png',
+    src_mobile: 'assets/images/sponsors/mobile/xpertal.png',
+    src_desktop: 'assets/images/sponsors/desktop/xpertal.png',
   },
   {
     id: 9,
     name: 'Buk',
-    src: 'assets/images/sponsors/buk.png',
+    src_mobile: 'assets/images/sponsors/mobile/buk.png',
+    src_desktop: 'assets/images/sponsors/desktop/buk.png',
   },
   {
     id: 10,
     name: 'Cerveceria y Malteria Quilmes',
-    src: 'assets/images/sponsors/quilmes.svg',
+    src_mobile: 'assets/images/sponsors/mobile/quilmes.png',
+    src_desktop: 'assets/images/sponsors/desktop/quilmes.png',
   },
   {
     id: 11,
     name: 'Globant México',
-    src: 'assets/images/sponsors/globant.png',
+    src_mobile: 'assets/images/sponsors/mobile/globant.png',
+    src_desktop: 'assets/images/sponsors/desktop/globant.png',
   },
   {
     id: 12,
     name: 'UALA',
-    src: 'assets/images/sponsors/uala.png',
+    src_mobile: 'assets/images/sponsors/mobile/uala.png',
+    src_desktop: 'assets/images/sponsors/desktop/uala.png',
   },
   {
     id: 13,
     name: 'Avature',
-    src: 'assets/images/sponsors/avature.png',
+    src_mobile: 'assets/images/sponsors/mobile/avature.png',
+    src_desktop: 'assets/images/sponsors/desktop/avature.png',
   },
   {
     id: 14,
     name: 'Kavak',
-    src: 'assets/images/sponsors/kavak.png',
+    src_mobile: 'assets/images/sponsors/mobile/kavak.png',
+    src_desktop: 'assets/images/sponsors/desktop/kavak.png',
   },
   {
     id: 15,
     name: 'Fly Bondi',
-    src: 'assets/images/sponsors/fly_bondi.jpg',
+    src_mobile: 'assets/images/sponsors/mobile/fly_bondi.png',
+    src_desktop: 'assets/images/sponsors/desktop/fly_bondi.png',
   }
 ]
 
@@ -128,7 +144,6 @@ export const SPEAKERS = [
     position: 'Tech Recruiter',
     linkedin: 'https://www.linkedin.com/in/agustin-vergara-eyzaguirre-8b219816a/',
     speakerPhoto: 'https://api.typeform.com/responses/files/72c628f6f3ad823717b98726c3f7b7782544e634b3802b49968449b0d9e5de84/83e8ad94_cf61_4377_a9e3_cd78c45ce19d.JPG',
-    companyPhoto: 'https://api.typeform.com/responses/files/fcc3a17ad2529df5945cb24c529591272064c8a8ca55956ceec82f4cc4a6764b/logo_menu_07.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -144,7 +159,6 @@ export const SPEAKERS = [
     position: 'Software Engineer',
     linkedin: 'https://www.linkedin.com/company/buk-cl/',
     speakerPhoto: 'assets/images/speakers/speaker_placeholder.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/fcc3a17ad2529df5945cb24c529591272064c8a8ca55956ceec82f4cc4a6764b/logo_menu_07.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -160,7 +174,6 @@ export const SPEAKERS = [
     position: 'Talent Acquisition Specialist',
     linkedin: 'https://www.linkedin.com/company/kueski/',
     speakerPhoto: 'assets/images/speakers/jimena_hernandez.jpg',
-    companyPhoto: 'https://api.typeform.com/responses/files/4ab7dc001593c677281190f1c75ae3fc440a6cdcaf69cc5286f0f8d38b8f3dfb/Logo_Aplicacio%CC%81n_fondo_blanco.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -176,7 +189,6 @@ export const SPEAKERS = [
     position: 'Talent Acquisition Specialist',
     linkedin: 'https://www.linkedin.com/in/c%C3%A9sar-reyes-fern%C3%A1ndez-62915a187/',
     speakerPhoto: 'assets/images/speakers/cesar_reyes.jpg',
-    companyPhoto: 'https://api.typeform.com/responses/files/4ab7dc001593c677281190f1c75ae3fc440a6cdcaf69cc5286f0f8d38b8f3dfb/Logo_Aplicacio%CC%81n_fondo_blanco.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -192,7 +204,6 @@ export const SPEAKERS = [
     position: 'Por confirmar',
     linkedin: 'https://www.linkedin.com/school/coderhouse/',
     speakerPhoto: 'assets/images/speakers/speaker_placeholder.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/f859e7e18c6d24ffa949cbc273704fb7dfad19be03bb59b433223862d386ca03/CMQ_130_Logo_RGB_Secundario_02_Color_01__1_.ai',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -208,7 +219,6 @@ export const SPEAKERS = [
     position: 'Recruitment Marketing',
     linkedin: 'https://www.linkedin.com/in/dafne-lozano-zermeno/',
     speakerPhoto: 'assets/images/speakers/dafne_lozano.jpg',
-    companyPhoto: 'https://api.typeform.com/responses/files/632aedda36f15a49f58a4feee12492246327da7c52ff48bcc811cc8946a7402b/BITSO_LOGO_DARKSIDE.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -224,7 +234,6 @@ export const SPEAKERS = [
     position: 'Early Professional Lead for Mexico and Costa Rica',
     linkedin: 'https://www.linkedin.com/in/valeria-larios-83b4689b/',
     speakerPhoto: 'assets/images/speakers/valeria_larios.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/151e3838ad580afccd17f670ae6cb77c3f2f6555956b17af34a6f6ab1ba7ce0d/IBM_logo%E2%94%AC%C2%AB_pos_CMYK.jpg',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -240,7 +249,6 @@ export const SPEAKERS = [
     position: 'Country Manager México',
     linkedin: 'https://www.linkedin.com/in/%C3%A1lvaroruizpulido/',
     speakerPhoto: 'assets/images/speakers/alvaro_ruiz.jpg',
-    companyPhoto: 'https://api.typeform.com/responses/files/3fd27191eace23f423f3b5669f5e4d851b6c67aca63b45c1d6d18a0d76a0c3b5/Logo_talent.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -256,7 +264,6 @@ export const SPEAKERS = [
     position: 'Recruiter Analyst IT',
     linkedin: 'https://www.linkedin.com/in/delfina-tagtachian-1a4742182/',
     speakerPhoto: 'assets/images/speakers/delfina_tagtachian.jpeg',
-    companyPhoto: 'https://api.typeform.com/responses/files/808006e716fa74df2758ece07fff8d231bdb67df2b7360515a5c886c3854e3be/download.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -272,7 +279,6 @@ export const SPEAKERS = [
     position: 'Talent Acquisition Specialist',
     linkedin: 'https://www.linkedin.com/in/jeremias-nemerovsky-3265aba3/',
     speakerPhoto: 'assets/images/speakers/jeremias_nemerovsky.jpeg',
-    companyPhoto: 'https://api.typeform.com/responses/files/808006e716fa74df2758ece07fff8d231bdb67df2b7360515a5c886c3854e3be/download.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -288,7 +294,6 @@ export const SPEAKERS = [
     position: 'Talent Acquisition Specialist',
     linkedin: 'https://www.linkedin.com/in/marcela-alvarez-578b492b/',
     speakerPhoto: 'assets/images/speakers/marcela_alvarez.jpg',
-    companyPhoto: 'https://api.typeform.com/responses/files/808006e716fa74df2758ece07fff8d231bdb67df2b7360515a5c886c3854e3be/download.png',
     date: {
       day: 'Miércoles 27 de Julio',
       time: {
@@ -304,7 +309,6 @@ export const SPEAKERS = [
     position: 'IT Recruiter',
     linkedin: 'https://www.linkedin.com/company/globant/',
     speakerPhoto: 'assets/images/speakers/brandon_saucedo.jpg',
-    companyPhoto: 'https://api.typeform.com/responses/files/2d176a0214eaa58a7387cc0ee1de6c50b851a223ff7bb58084c7c97b8dfa9f8b/download.png',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -320,7 +324,6 @@ export const SPEAKERS = [
     position: 'Chief Data & Analytics Officer',
     linkedin: 'https://www.linkedin.com/in/pablo-a-guzzi/',
     speakerPhoto: 'assets/images/speakers/speaker_placeholder.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/4637052376a51daef6600540afcfbcda192adc66fa816727a2fb470bddad5abb/Ual%C3%A1___Imagotipo___Color.png',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -336,7 +339,6 @@ export const SPEAKERS = [
     position: 'Talent Acquisition Lead',
     linkedin: 'https://www.linkedin.com/in/camila-mosto-b39394119/',
     speakerPhoto: 'assets/images/speakers/camila_mosto.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/0b6e93583ae509f5e0c9b51c8e0a7476b4379d3f3c4bad5f22fe0d8d821532d7/elementos_KAvak_Mesa_de_trabajo_1_copia_4__1_.png',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -352,7 +354,6 @@ export const SPEAKERS = [
     position: 'Por confirmar',
     linkedin: 'https://www.linkedin.com/company/wearecasai/',
     speakerPhoto: 'assets/images/speakers/speaker_placeholder.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/50e58d2eb8da9b485da08022675552842a93efa636745e88a52ca4abf0f2bdc6/Logo_Casai_byn_01.png',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -368,7 +369,6 @@ export const SPEAKERS = [
     position: 'Head of Product',
     linkedin: 'https://www.linkedin.com/in/lucasrencoret/',
     speakerPhoto: 'assets/images/speakers/lucas_rencoret.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/2c8637fdb40f2d5be7f58bddcb3916934a116fce7bb114bd077d8dfd8610f8bf/Logo_Xepelin_Digital.png',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -384,7 +384,6 @@ export const SPEAKERS = [
     position: 'Por confirmar',
     linkedin: 'https://www.linkedin.com/company/flybondi/',
     speakerPhoto: 'assets/images/speakers/speaker_placeholder.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/c2eeee15a90fbaba18474ad432a88732b34385daef02d228f805a8b81262d534/FB_LOGO_AMARILLO__1_.jpg',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -400,7 +399,6 @@ export const SPEAKERS = [
     position: 'Digital Talent Acquisition Lead',
     linkedin: 'https://www.linkedin.com/school/coderhouse/',
     speakerPhoto: 'assets/images/speakers/liora_goldberg.jpg',
-    companyPhoto: 'https://api.typeform.com/responses/files/ede579129eed9cadf01404f28426f74528c317ab318483a0b0e7a364a9a6c992/logo_xpertal.png',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -416,7 +414,6 @@ export const SPEAKERS = [
     position: 'Culture, Communication & Development Manager',
     linkedin: 'https://www.linkedin.com/in/cceciliaruizlarios/',
     speakerPhoto: 'assets/images/speakers/cecilia_ruiz.png',
-    companyPhoto: 'https://api.typeform.com/responses/files/61b24b5397ab827277e43fb88740a77d99726b82bc0181e6e11275ca41ce3d12/master_logo_gaia_1200x1200__1_.jpg',
     date: {
       day: 'Jueves 28 de Julio',
       time: {
@@ -432,7 +429,6 @@ export const SPEAKERS = [
     position: 'Culture & Communication | Recruiter',
     linkedin: 'https://www.linkedin.com/in/sofia-camacho-2a4438176/',
     speakerPhoto: 'assets/images/speakers/sofia_camacho.jpg',
-    companyPhoto: 'https://api.typeform.com/responses/files/61b24b5397ab827277e43fb88740a77d99726b82bc0181e6e11275ca41ce3d12/master_logo_gaia_1200x1200__1_.jpg',
     date: {
       day: 'Jueves 28 de Julio',
       time: {

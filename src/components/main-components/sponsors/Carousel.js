@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { SPONSORS } from 'data';
-/* import useWindowSize from "components/hooks/useWindowSize"; */
+import useWindowSize from "components/hooks/useWindowSize";
 
 
 
-const images = SPONSORS.map(sponsor => sponsor.src)
+
 
 const variants = {
   enter: (direction) => {
@@ -36,19 +36,20 @@ const swipePower = (offset, velocity) => {
 
 export default function Carousel () {
 
-/*   const [width] = useWindowSize(); */
+  const [width] = useWindowSize();
+  const images = SPONSORS.map(sponsor => (width >= 1024 ? sponsor.src_desktop : sponsor.src_mobile));
 
   const [[page, direction], setPage] = useState([0, 0]);
   const [pages, setPages] = useState([]);
   const pageIndex = wrap(0, Math.ceil(images.length / 2), page);
-  console.log(pageIndex)
+
   useEffect(() => {
     const pagesToSet = [];
     for (let i = 0; i < Math.ceil(images.length / 2); i++) {
       pagesToSet.push(i);
     }
     setPages(pagesToSet);
-  }, []);
+  }, [images.length]);
 
   const paginate = (newDirection) => {
     setPage([page + newDirection, newDirection]);

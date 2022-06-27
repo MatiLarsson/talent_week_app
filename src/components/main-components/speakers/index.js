@@ -14,7 +14,7 @@ export default function Speakers () {
 
   return (
     <section className="speakers" id='speakers'>
-      <div className="speakers-title">Speakers</div>
+      <div className="speakers-title">SPEAKERS</div>
       <motion.div
         ref={carousel}
         className="speakers-carousel"

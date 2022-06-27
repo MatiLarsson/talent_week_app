@@ -1207,10 +1207,10 @@ $CT: "CursedTimer";
             position: relative;
             .circuito {
               position: absolute;
-              width: 266px;
+              width: 300px;
               height: 114px;
               top: 3px;
-              left: calc(50% - 133px);
+              left: calc(50% - 150px);
             }
             .card-names-and-times {
               width: 100%;
@@ -1233,7 +1233,7 @@ $CT: "CursedTimer";
                 color: white;
               }
               .card-times {
-                padding-bottom: 10px;
+                padding-bottom: 20px;
                 width: 50%;
                 display: flex;
                 flex-grow: 1;
@@ -1241,6 +1241,7 @@ $CT: "CursedTimer";
                 align-items: flex-end;
                 justify-content: flex-end;
                 p {
+                  padding-right: 3px;
                   font-family: $GB-regular;
                   font-size: 14px;
                   text-align: right;
