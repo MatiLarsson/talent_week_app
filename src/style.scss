@@ -1307,6 +1307,35 @@ $CT: "CursedTimer";
       }
     }
   }
+  // -----------SECCION FORM-----------
+  .form {
+    width: 100%;
+    height: 968px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .form-title {
+      margin-top: 40px;
+      width: 100%;
+      padding: 0 16px;
+      text-align: left;
+      font-family: $GB-bold;
+      font-size: 40px;
+      color: white;
+    }
+    .form-subtitle {
+      margin-top: 8px;
+      width: 100%;
+      padding: 0 20px;
+      text-align: left;
+      font-family: $US-regular;
+      font-size: 14px;
+      color: white;
+    }
+  }
+  // -----------SECCION SPONSORS-----------
   .sponsors {
     padding: 47px 16px 0 16px;
     width: 100%;
