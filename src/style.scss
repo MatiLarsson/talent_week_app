@@ -1283,9 +1283,9 @@ $CT: "CursedTimer";
           align-items: center;
           user-select: none;
           color: white;
-          border-radius: 13px;
+          border-radius: 13.5px;
           border-color: #EAFF6A;
-          border-width: .5px;
+          border-width: 1px;
           border-style: solid;
           @media screen and (min-width: 1024px) {
             height: 50px;
@@ -1863,8 +1863,8 @@ $CT: "CursedTimer";
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 72px;
     @media screen and (min-width: 1024px) {
+      margin-right: 72px;
       padding-top: 45px;
       justify-content: flex-start;
       align-content: flex-end;
