@@ -12,7 +12,7 @@ export default function NavBar () {
           <img className="coderhouse" src="/assets/logos/coderhouse.svg" alt="coderhouse logo" />
         </a>
         {
-          (width <= 1024)
+          (width < 1024)
             ? <Menu />
             : <DesktopMenu />
         }

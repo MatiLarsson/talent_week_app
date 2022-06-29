@@ -1,8 +1,11 @@
 import { MENU_OPTIONS } from "data"
 import { CODERHOUSE_OPTIONS } from "data"
 import { Link } from "react-scroll"
+import useWindowSize from "./hooks/useWindowSize"
 
 export default function Footer () {
+  const [width] = useWindowSize()
+
   return (
     <div className="footer">
       <div className="footer-menu">
@@ -56,6 +59,7 @@ export default function Footer () {
         </div>
       </div>
       <div className="copyright">
+        <div style={{display: width >= 1024 ? 'block' : 'none'}} className="line" />
         <p>© Copyright 2022 - Todos los derechos reservados</p>
       </div>
     </div>
