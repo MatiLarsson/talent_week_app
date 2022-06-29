@@ -1,9 +1,11 @@
+import useWindowSize from "components/hooks/useWindowSize";
 
 export default function Apply () {
+  const [width] = useWindowSize();
   return (
     <section className="apply" id="inscripcion">
       <div className="cyborg-container">
-        <img className='cyborg-mujer' src="/assets/images/mobile/cyborg-mobile-mujer.png" alt="mujer cyborg" />
+        <img className='cyborg-mujer' src={width >= 1024 ? "/assets/images/desktop/cyborg-desktop-mujer.png" : "/assets/images/mobile/cyborg-mobile-mujer.png"} alt="mujer cyborg" />
         <div className="gradient-canvas1" />
         <div className="gradient-canvas2" />
         <div className="gradient-canvas3" />

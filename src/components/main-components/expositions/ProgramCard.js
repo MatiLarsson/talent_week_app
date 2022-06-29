@@ -1,9 +1,11 @@
-
+import useWindowSize from "components/hooks/useWindowSize"
 
 export default function ProgramCard ({props}) {
+  const [width] = useWindowSize()
+
   return (
     <div className="program-card">
-      <img src="/assets/images/mobile/circuito-dorado-exposition-card-mobile.svg" className="circuito" alt="circuito dorado"/>
+      <img src={width >= 1024 ? '/assets/images/desktop/circuito-epxosiciones-desktop.png' : "/assets/images/mobile/circuito-dorado-exposition-card-mobile.svg"} className="circuito" alt="circuito dorado"/>
       <div className="card-names-and-times">
         <p className="card-names">{props.name}</p>
         <div className="card-times">

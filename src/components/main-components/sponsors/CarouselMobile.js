@@ -2,11 +2,6 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { SPONSORS } from 'data';
-import useWindowSize from "components/hooks/useWindowSize";
-
-
-
-
 
 const variants = {
   enter: (direction) => {
@@ -34,13 +29,14 @@ const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-export default function Carousel () {
+export default function CarouselMobile () {
 
-  const [width] = useWindowSize();
-  const images = SPONSORS.map(sponsor => (width >= 1024 ? sponsor.src_desktop : sponsor.src_mobile));
+  const images = SPONSORS.map(sponsor => sponsor.src_mobile);
 
   const [[page, direction], setPage] = useState([0, 0]);
+
   const [pages, setPages] = useState([]);
+
   const pageIndex = wrap(0, Math.ceil(images.length / 2), page);
 
   useEffect(() => {
@@ -60,7 +56,7 @@ export default function Carousel () {
       <div className="sponsors-carousel-container">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
-            className="two-image-container"
+            className="image-container"
             key={page}
             custom={direction}
             variants={variants}
@@ -68,8 +64,8 @@ export default function Carousel () {
             animate="center"
             exit="exit"
             transition={{
-              x: { type: "spring", stiffness: 200, damping: 1000 },
-              opacity: { duration: .1 }
+              x: { type: "just"},
+              opacity: { duration: .04 }
             }}
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
@@ -88,13 +84,16 @@ export default function Carousel () {
               src={images[pageIndex * 2]}
               alt='sponsor logo'
             />
-            <img
-              src={(images[pageIndex * 2 + 1]) ? (images[pageIndex * 2 + 1]) : null}
-              alt='sponsor logo'
-            />
+            {
+              images[pageIndex * 2 + 1]
+              && <img
+                  src={(images[pageIndex * 2 + 1]) ? (images[pageIndex * 2 + 1]) : null}
+                  alt='sponsor logo'
+                />
+            }
           </motion.div>
         </AnimatePresence>
-        <div className="next" onClick={() => paginate(1)}>
+        <div className="next" onClick={() => paginate(1)} style={pageIndex === 7 ? {display: 'none'} : {display: 'flex'}}>
           <img src="assets/logos/right_arrow.svg" alt="right arrow" />
         </div>
         <div className="prev" onClick={() => paginate(-1)} style={pageIndex === 0 ? {display: 'none'} : {display: 'flex'}}>

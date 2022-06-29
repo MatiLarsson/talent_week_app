@@ -13,7 +13,7 @@ export default function About () {
   let interval;
 
   const startTimer = () => {
-    const eventDay = new Date("July 4 2022 12:05")
+    const eventDay = new Date("July 27 2022 14:00")
     const countDownDate = eventDay.getTime();
 
     interval = setInterval(() => {
