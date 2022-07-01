@@ -276,7 +276,7 @@ $CT: "CursedTimer";
     justify-content: flex-start;
     align-items: center;
     @media screen and (min-width: 1024px) {
-      height: 768px;
+      min-height: 600px;
       position: relative;
       align-items: flex-start;
       max-width: 1600px;
@@ -508,8 +508,11 @@ $CT: "CursedTimer";
         font-size: 28px;
         line-height: 35px;
         text-align: justify;
-        width: 1014px;
+        width: 800px;
         align-self: center;
+      }
+      @media screen and (min-width: 1920px){
+        width: 1300px;
       }
       .about-text2{
         margin-top: 20px;
@@ -632,7 +635,7 @@ $CT: "CursedTimer";
     justify-content: flex-start;
     align-items: center;
     @media screen and (min-width: 1024px) {
-      height: 600px;
+      min-height: 600px;
     }
     .speakers-title {
       font-family: $GB-bold;
@@ -640,10 +643,12 @@ $CT: "CursedTimer";
       color: white;
       margin-top: 32px;
       @media screen and (min-width: 1024px) {
-        font-size: 72px;
         width: 100%;
+        max-width: 1920px;
+        font-size: 72px;
         text-align: left;
         padding-left: 72px;
+        margin: 50px 0;
       }
     }
     .speakers-carousel {
@@ -782,12 +787,14 @@ $CT: "CursedTimer";
   .activities{
     position: relative;
     color: white;
-    height: 640px;
+    min-height: 650px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     @media screen and (min-width: 1024px){
-      height: 1136px;
+      margin: 170px 0;
+      min-height: 800px;
     }
     .circuito-activities{
       z-index: 0;
@@ -798,26 +805,14 @@ $CT: "CursedTimer";
       top: 0px;
       mix-blend-mode:hard-light;
       @media screen and (min-width: 1024px){
-        width: 893.16px;
-        height: 1131.78px;
+        width: 671px;
+        height: 850px;
         top: 0px;
         right: 0px;
       }
     }
-    .vector-activities{
-      position: absolute;
-      width: 75.8%;
-      height: 375.14px;
-      left: 43px;
-      top: 165px;
-      @media screen and (min-width: 1024px){
-        width: 90%;
-        height: 745px;
-        left: 4%;
-        top: 351px;
-      }
-    }
     .activities-title{
+      width: 100%;
       min-height: 133px;
       padding-left: 16px;
       padding-top: 41px;
@@ -830,38 +825,57 @@ $CT: "CursedTimer";
       -webkit-text-stroke-width: 0.5px;
       -webkit-text-stroke-color: #FFFFFF;
       mix-blend-mode:hard-light;
-      @media screen and (min-width: 1024px){
+      // filter: drop-shadow(0px 0px 10px hsl(68, 100%, 69%));
+      @media screen and (min-width: 1024px) {
+        max-width: 1920px;
         font-size: 72px;
-        line-height: 94px;
+        padding-left: 72px;
       }
     }
     .activities-container{
       z-index: 1;
       display: flex;
       flex-direction: column;
-      height: 100%;
+      width: 360px;
+      position: relative;
+      margin-top: -100px;
       @media screen and (min-width: 1024px){
-        position: relative;
+        width: 880px;
+        margin-top: 50px;
+      }
+      .vector-activities{
+        position: absolute;
+        object-fit: contain;
+        width: 75.8%;
+        height: 375.14px;
+        left: 43px;
+        top: 165px;
+        filter: drop-shadow(0px 0px 10px hsl(68, 100%, 69%));
+        @media screen and (min-width: 1024px){
+          width: 880px;
+          height: 532px;
+          left: calc(50% - 440px);
+          top: 50px;
+        }
       }
       .titles{
         font-family: $GB-bold;
         font-style: italic;
         font-weight: 400;
         font-size: 16px;
-        line-height: 21px;
         background: linear-gradient(180deg, #F2BAFF 0%, #E9FF63 85.71%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         padding-bottom: 8px;
         @media screen and (min-width: 1024px){
-          font-size: 48px;
-          line-height: 62px;
+          font-size: 32px;
           display: flex;
           align-items: center;
           .activities-logos{
             width: 82px;
             height: 82px;
+            filter: drop-shadow(0px 0px 1px hsl(68, 100%, 69%));
           }
         }
       }
@@ -870,32 +884,32 @@ $CT: "CursedTimer";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 17px;
         display: flex;
         align-items: center;
         color: #FFFFFF;
         @media screen and (min-width: 1024px){
-          font-size: 30px;
-          line-height: 37px;
+          font-size: 22px;
         }
       }
       .activities-exposiciones{
-        margin-top: 75px;
-        margin-left: 40px;
-        width: 154px;
+        position: absolute;
+        top: 215px;
+        left: 40px;
+        width: 150px;
+        text-align: left;
         @media screen and (min-width: 1024px){
           margin: 0px;
           position: absolute;
-          top: 154px;
-          left: 13%;
-          width: 390px;
+          top: 35px;
+          left: 85px;
+          width: 330px;
         }
       }
       .activities-entrevistas{
-        margin-top: 11px;
-        margin-right: 38px;
-        width: 160px;
-        align-self: flex-end;
+        position: absolute;
+        top: 315px;
+        right: 40px;
+        width: 180px;
         text-align: right;
         p{
           padding-right: 2px;
@@ -903,22 +917,24 @@ $CT: "CursedTimer";
         @media screen and (min-width: 1024px){
           margin: 0px;
           position: absolute;
-          top: 548px;
+          top: 310px;
           left: 35%;
-          width: 416px;
+          width: 310px;
           text-align: left;
         }
       }
       .activities-tips{
-        margin-top: 8px;
-        margin-left: 40px;
-        width: 120px;
+        position: absolute;
+        top: 430px;
+        left: 40px;
+        width: 150px;
+        text-align: left;
         @media screen and (min-width: 1024px){
           margin: 0px;
           position: absolute;
-          top: 154px;
-          left: 58.5%;
-          width: 390px;
+          top: 35px;
+          right: 55px;
+          width: 275px;
         }
       }
     }
@@ -1025,6 +1041,7 @@ $CT: "CursedTimer";
       z-index: 10;
       width: 100%;
       @media screen and (min-width: 1024px) {
+        max-width: 1920px;
         font-size: 72px;
         line-height: 95px;
         text-align: left;
@@ -1292,6 +1309,7 @@ $CT: "CursedTimer";
     .title {
       margin-top: 40px;
       width: 100%;
+      max-width: 1920px;
       font-family: $GB-bold;
       font-size: 48px;
       line-height: 62.91px;
@@ -1402,6 +1420,7 @@ $CT: "CursedTimer";
               height: 114px;
               top: 3px;
               left: calc(50% - 150px);
+              filter: drop-shadow(0px 0px 10px hsl(68, 100%, 69%));
               @media screen and (min-width: 1024px) {
                 width: 570px;
                 height: 224px;
@@ -1497,6 +1516,7 @@ $CT: "CursedTimer";
       align-items: flex-start;
     }
     @media screen and (min-width: 1366px) {
+      max-width: 1920px;
       height: 737px;
       align-items: flex-start;
     }
@@ -1664,10 +1684,11 @@ $CT: "CursedTimer";
   // -----------SECCION FORM-----------
   .form {
     width: 100%;
-    // height: 600px;
+    max-width: 1920px;
     background-color: black;
     display: flex;
-    flex-direction: column;    align-items: center;
+    flex-direction: column;
+    align-items: center;
     .form-title {
       margin-top: 40px;
       width: 100%;
@@ -1698,6 +1719,22 @@ $CT: "CursedTimer";
         padding: 0 72px;
       }
     }
+    .typeform {
+      margin: 30px 0;
+      max-width: 90%;
+      max-height: 400px;
+      filter: drop-shadow(0px 0px 10px hsl(68, 100%, 69%));
+      @media screen and (min-width: 1024px) {
+        min-height: 450px;
+        max-width: 80%;
+        margin: 50px 0;
+      }
+      @media screen and (min-width: 1920px) {
+        min-height: 900px;
+        max-width: 85%;
+        margin: 120px 0;
+      }
+    }
   }
   // -----------SECCION SPONSORS-----------
   .sponsors {
@@ -1719,6 +1756,7 @@ $CT: "CursedTimer";
       text-align: left;
       @media screen and (min-width: 1024px) {
         width: 100%;
+        max-width: 1920px;
         font-size: 38px;
         padding: 20px 72px 0 72px;
         text-align: left;
@@ -1733,6 +1771,7 @@ $CT: "CursedTimer";
       justify-content: center;
       align-items: center;
       @media screen and (min-width: 1024px) {
+        max-width: 1920px;
         height: 252px;
       }
       .image-container {
@@ -1845,6 +1884,8 @@ $CT: "CursedTimer";
   grid-template-rows: repeat(3, 1fr);
   z-index: 100;
   @media screen and (min-width: 1024px) {
+    max-width: 1920px;
+    margin: auto;
     height: 540px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1972,6 +2013,7 @@ $CT: "CursedTimer";
     .line {
       background-color: white;
       width: calc(100vw - 144px);
+      max-width: 1920px;
       height: 1px;
       margin: 97px 72px 0 72px;
     }
