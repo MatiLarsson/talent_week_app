@@ -18,7 +18,7 @@ const variants = {
   exit: (direction) => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
+/*       x: direction < 0 ? 1000 : -1000, */
       opacity: 0
     };
   }
@@ -64,8 +64,8 @@ export default function CarouselTablet () {
             animate="center"
             exit="exit"
             transition={{
-              x: { type: "just"},
-              opacity: { duration: .04 }
+              x: { type: "just", duration: 1 },
+              opacity: { duration: 0 }
             }}
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
