@@ -4,7 +4,7 @@ import useWindowSize from 'components/hooks/useWindowSize';
 
 export default function About () {
   const [width] = useWindowSize();
-  
+
   const [timerDays, setTimerDays] = useState();
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
@@ -55,9 +55,9 @@ export default function About () {
         <p className="about-text1">¡Súmate a nuestro primer evento sobre talento digital y empleabilidad 100% online para la comunidad de Coderhouse en Latinoamérica!</p>
         <p className="about-text2">Si eres estudiante o graduado de Coderhouse, podrás entrar en contacto con más de 15 empresas líderes en tecnología.</p>
       </div>
-        <Timer 
-          timerDays={timerDays} 
-          timerHours={timerHours} 
+        <Timer
+          timerDays={timerDays}
+          timerHours={timerHours}
           timerMinutes={timerMinutes}
           timerSeconds={timerSeconds}
         />

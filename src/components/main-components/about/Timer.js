@@ -1,8 +1,9 @@
 import useWindowSize from 'components/hooks/useWindowSize';
 
-const Timer = ({timerDays, timerHours, timerMinutes, timerSeconds}) => {
+
+export default function Timer ({timerDays, timerHours, timerMinutes, timerSeconds}) {
   const [width] = useWindowSize();
-  
+
   return (
     <div className='timerContainer'>
         <div className="about-faltan">
@@ -42,7 +43,6 @@ const Timer = ({timerDays, timerHours, timerMinutes, timerSeconds}) => {
                 </section>
             </section> */}
         </div>
-        
         <div className="about-mano-cyborg">
             <img src={width >= 1024 ? "/assets/images/desktop/halos-desktop.png" : "/assets/images/mobile/halos-mobile.png"} className="halos" alt='halos' />
             <img src={width >=1024 ? "/assets/images/desktop/mano-cyborg-desktop.png" : "/assets/images/mobile/mano-cyborg-mobile.png"} className="mano-cyborg" alt='mano cyborg' />
@@ -57,5 +57,3 @@ Timer.defaultProps = {
     timerMinutes: '00',
     timerSeconds: '00'
 }
-
-export default Timer

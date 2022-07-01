@@ -21,7 +21,18 @@ export default function DesktopMenu () {
             >
               {option.name}
             </Link>
-          : <a className="boton-reservar" href="https://coderhouse.typeform.com/to/saYxC4o3" target='_blank' rel='noreferrer' key={option.name}>Reservar mi lugar</a>
+          : <Link
+              className="boton-reservar"
+              key={option.name}
+              spy={true}
+              smooth={true}
+              offset={-115}
+              duration={500}
+              to='inscripcion'
+              activeClass="active"
+            >
+              Reservar mi lugar
+            </Link>
         ))
       }
     </div>
