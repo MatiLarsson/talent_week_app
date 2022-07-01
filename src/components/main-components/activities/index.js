@@ -10,7 +10,7 @@ export default function Activities () {
         DURANTE ESTOS DÍAS PODRÁS:
       </div>
       <div className="activities-container">
-      <img src={width >= 1024 ? "/assets/images/desktop/vectores-activities-desktop.svg" : "/assets/images/mobile/vectores-activities-mobile.svg"} className="vector-activities" alt='vector activities'/>
+        <img src={width >= 1024 ? "/assets/images/desktop/vectores-activities-desktop.svg" : "/assets/images/mobile/vectores-activities-mobile.svg"} className="vector-activities" alt='vector activities'/>
         <div className="activities-exposiciones">
           <p className="exposiciones-title titles"><img src="/assets/logos/webcam.svg" className='activities-logos' alt='webcam'/>EXPOSICIONES</p>
           <p className="entrevistas-text text">Asistir a las exposiciones de todas las empresas participantes</p>

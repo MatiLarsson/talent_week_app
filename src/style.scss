@@ -822,10 +822,10 @@ $CT: "CursedTimer";
       font-size: 35px;
       line-height: 46px;
       color: #000000;
-      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-width: 1.5px;
       -webkit-text-stroke-color: #FFFFFF;
       mix-blend-mode:hard-light;
-      // filter: drop-shadow(0px 0px 10px hsl(68, 100%, 69%));
+      filter: drop-shadow(0px 0px 5px hsl(68, 100%, 69%));
       @media screen and (min-width: 1024px) {
         max-width: 1920px;
         font-size: 72px;
@@ -912,7 +912,7 @@ $CT: "CursedTimer";
         width: 180px;
         text-align: right;
         p{
-          padding-right: 2px;
+          padding-right: 4px;
         }
         @media screen and (min-width: 1024px){
           margin: 0px;
@@ -923,7 +923,7 @@ $CT: "CursedTimer";
           text-align: left;
         }
       }
-      .activities-tips{
+      .activities-tips {
         position: absolute;
         top: 430px;
         left: 40px;
@@ -933,7 +933,7 @@ $CT: "CursedTimer";
           margin: 0px;
           position: absolute;
           top: 35px;
-          right: 55px;
+          left: 550px;
           width: 275px;
         }
       }
@@ -1523,7 +1523,7 @@ $CT: "CursedTimer";
     .cyborg-container {
       position: absolute;
       right: 0;
-      bottom: 9px;
+      bottom: 6px;
       height: 283px;
       width: 303px;
       overflow: hidden;
