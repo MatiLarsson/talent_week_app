@@ -20,7 +20,15 @@ export default function Welcome () {
         </div>
       </div>
       <div className="buttonContainer">
-        <a href="https://coderhouse.typeform.com/to/saYxC4o3" target='_blank' rel='noreferrer'><button className="button button--reservar">Reservar mi lugar</button></a>
+        <Link
+          to='form'
+          spy={true}
+          smooth={true}
+          offset={-48}
+          duration={500}
+        >
+          <button className="button button--reservar">Reservar mi lugar</button>
+        </Link>
         <Link
           spy={true}
           smooth={true}

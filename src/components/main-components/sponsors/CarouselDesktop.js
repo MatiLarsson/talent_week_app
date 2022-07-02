@@ -64,7 +64,7 @@ export default function CarouselDesktop () {
             animate="center"
             exit="exit"
             transition={{
-              x: { type: "just", duration: 1 },
+              x: { type: "just", duration: .8 },
               opacity: { duration: 0 }
             }}
             drag="x"

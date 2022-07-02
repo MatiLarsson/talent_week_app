@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "GoboldBold";
+  src: url("../../fonts/Gobold/Gobold_Bold_Italic.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+$GB-bold: "GoboldBold";
+
+@font-face {
+  font-family: "GoboldRegular";
+  src: url("../../fonts/Gobold/Gobold_Regular_Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$GB-regular: "GoboldRegular";
+
+@font-face {
+  font-family: "UntitledSansMedium";
+  src: url("../../fonts/UntitledSans/UntitledSans-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+$US-medium: "UntitledSansMedium";
+
+@font-face {
+  font-family: "UntitledSansRegular";
+  src: url("../../fonts/UntitledSans/UntitledSans-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+$US-regular: "UntitledSansRegular";
+
+@font-face {
+  font-family: "CursedTimer";
+  src: url("../../fonts/CursedTimer/CursedTimerULiL.ttf") format("truetype");
+  font-weight: 400;
+}
+
+$CT: "CursedTimer";

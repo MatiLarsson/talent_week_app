@@ -1,0 +1,12 @@
+.main {
+  width: 100vw;
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  @media screen and (min-width: 1024px) {
+    padding-top: 112px;
+  }
+}
+

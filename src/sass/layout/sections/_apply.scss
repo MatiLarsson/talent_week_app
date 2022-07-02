@@ -1,0 +1,181 @@
+.main {
+  .apply {
+    width: 100%;
+    height: 432px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @media screen and (min-width: 1024px) {
+      height: 600px;
+      align-items: flex-start;
+    }
+    @media screen and (min-width: 1366px) {
+      max-width: 1920px;
+      height: 737px;
+      align-items: flex-start;
+    }
+    .cyborg-container {
+      position: absolute;
+      right: 0;
+      bottom: 6px;
+      height: 283px;
+      width: 303px;
+      overflow: hidden;
+      @media screen and (min-width: 1024px) {
+        height: 550px;
+        width: 620px;
+        right: 0;
+        bottom: 0;
+
+      }
+      @media screen and (min-width: 1366px) {
+        height: 768px;
+        width: 866px;
+        bottom: -31px;
+      }
+      .cyborg-mujer {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 0;
+      }
+      .gradient-canvas1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(271.94deg, #000000 -0.67%, rgba(0, 0, 0, 0) 6.66%);
+        z-index: 1;
+      }
+      .gradient-canvas2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(310.33deg, #000000 4.33%, rgba(0, 0, 0, 0) 14.36%);
+        z-index: 2;
+      }
+      .gradient-canvas3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(271.45deg, #000000 -9.01%, rgba(0, 0, 0, 0) 26.58%);
+        z-index: 3;
+      }
+      .gradient-canvas4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(185.31deg, rgba(0, 0, 0, 0) 76.39%, rgba(0, 0, 0, 0) 82.54%, #000000 93.97%, #000000 100.12%);
+        z-index: 4;
+      }
+    }
+    .apply-container {
+      z-index: 5;
+      width: 100%;
+      height: 100%;
+      padding: 0px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      @media screen and (min-width: 1024px) {
+        width: 450px;
+        padding: 0px;
+        margin: 0 72px;
+        align-items: center;
+      }
+      @media screen and (min-width: 1366px) {
+        width: 578px;
+        padding: 0px;
+        margin: 0 72px;
+        align-items: center;
+      }
+      .apply-title {
+        margin-top: 44px;
+        font-family: $GB-bold;
+        font-size: 40px;
+        color: #EAFF6A;
+        @media screen and (min-width: 1024px) {
+          font-size: 60px;
+          width: 100%;
+          margin-top: 100px;
+          text-align: left;
+        }
+        @media screen and (min-width: 1366px) {
+          font-size: 72px;
+          width: 100%;
+          margin-top: 158px;
+          text-align: left;
+        }
+      }
+      .apply-text {
+        margin-top: 20px;
+        font-family: $US-regular;
+        font-size: 14px;
+        color: white;
+        text-align: left;
+        @media screen and (min-width: 1024px) {
+          font-size: 18px;
+          width: 100%;
+          margin-top: 25px;
+        }
+        @media screen and (min-width: 1366px) {
+          margin-top: 30px;
+          width: 100%;
+          font-size: 24px;
+        }
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+        @media screen and (min-width: 1024px) {
+          margin-top: 54px;
+          width: 100%;
+        }
+        button {
+          border: none;
+          width: 160px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20.5px;
+          font-family: $US-medium;
+          font-size: 14px;
+          background-color: #EAFF6A;
+          color: black;
+          cursor: pointer;
+          @media screen and (min-width: 1024px) {
+            width: 250px;
+            height: 54px;
+            font-size: 16px;
+            border-radius: 32px;
+          }
+          @media screen and (min-width: 1366px) {
+            width: 390px;
+            height: 84px;
+            font-size: 24px;
+            border-radius: 50px;
+          }
+          &:focus {
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
